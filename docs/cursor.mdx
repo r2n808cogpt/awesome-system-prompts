@@ -8,14 +8,26 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
-import Agent from "!raw-loader!./assets/cursor/agent.txt";
+import AgentTools from "!raw-loader!./assets/cursor/agent-tools-v1.txt";
+import AgentV1_0 from "!raw-loader!./assets/cursor/agent-v1_0.txt";
+import AgentV1_1 from "!raw-loader!./assets/cursor/agent-v1_1.txt";
+import AgentV1_2 from "!raw-loader!./assets/cursor/agent-v1_2.txt";
 import Chat from "!raw-loader!./assets/cursor/chat.txt";
 import MemoryRating from "!raw-loader!./assets/cursor/memory-rating.txt";
 import Memory from "!raw-loader!./assets/cursor/memory.txt";
 
 <Tabs queryString="primary">
   <TabItem value="agent" label="Agent">
-    <CodeBlock language="markdown">{Agent}</CodeBlock>
+    <CodeBlock language="json">{AgentTools}</CodeBlock>
+  </TabItem>
+  <TabItem value="agent-v1_0" label="Agent v1.0">
+    <CodeBlock language="markdown">{AgentV1_0}</CodeBlock>
+  </TabItem>
+  <TabItem value="agent-v1_1" label="Agent v1.1">
+    <CodeBlock language="markdown">{AgentV1_1}</CodeBlock>
+  </TabItem>
+  <TabItem value="agent-v1_2" label="Agent v1.2">
+    <CodeBlock language="markdown">{AgentV1_2}</CodeBlock>
   </TabItem>
   <TabItem value="chat" label="Chat">
     <CodeBlock language="markdown">{Chat}</CodeBlock>
