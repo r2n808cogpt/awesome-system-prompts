@@ -1,0 +1,37 @@
+---
+title: Xcode
+description: Xcode Prompt
+hide_table_of_contents: true
+---
+
+import CodeBlock from "@theme/CodeBlock";
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+import DocumentAction from "!raw-loader!./assets/xcode/document-action.txt";
+import ExplainAction from "!raw-loader!./assets/xcode/explain-action.txt";
+import MessageAction from "!raw-loader!./assets/xcode/message-action.txt";
+import PlaygroundAction from "!raw-loader!./assets/xcode/playground-action.txt";
+import PreviewAction from "!raw-loader!./assets/xcode/preview-action.txt";
+import SystemAction from "!raw-loader!./assets/xcode/system-action.txt";
+
+<Tabs queryString="primary">
+  <TabItem value="prompt" label="Prompt">
+    <CodeBlock language="markdown">{DocumentAction}</CodeBlock>
+  </TabItem>
+  <TabItem value="explain-action" label="Explain Action">
+    <CodeBlock language="markdown">{ExplainAction}</CodeBlock>
+  </TabItem>
+  <TabItem value="message-action" label="Message Action">
+    <CodeBlock language="markdown">{MessageAction}</CodeBlock>
+  </TabItem>
+  <TabItem value="playground-action" label="Playground Action">
+    <CodeBlock language="markdown">{PlaygroundAction}</CodeBlock>
+  </TabItem>
+  <TabItem value="preview-action" label="Preview Action">
+    <CodeBlock language="markdown">{PreviewAction}</CodeBlock>
+  </TabItem>
+  <TabItem value="system-action" label="System Action">
+    <CodeBlock language="markdown">{SystemAction}</CodeBlock>
+  </TabItem>
+</Tabs>
