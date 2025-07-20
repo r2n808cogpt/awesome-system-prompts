@@ -10,7 +10,7 @@ const config = {
     v4: true,
   },
   url: "https://EliFuzz.github.io",
-  baseUrl: "/prompt-labs/",
+  baseUrl: "/awesome-system-prompts/",
   projectName: "EliFuzz.github.io",
   organizationName: "EliFuzz",
   trailingSlash: false,
