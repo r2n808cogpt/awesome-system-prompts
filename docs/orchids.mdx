@@ -1,0 +1,21 @@
+---
+title: Orchids
+description: Orchids Prompt
+hide_table_of_contents: true
+---
+
+import CodeBlock from "@theme/CodeBlock";
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+import DecisionMaking from "!!raw-loader!./assets/orchids/decision-making.txt";
+import Prompt from "!!raw-loader!./assets/orchids/prompt.txt";
+
+<Tabs queryString="primary">
+  <TabItem value="decision-making" label="Decision Making">
+    <CodeBlock language="markdown">{DecisionMaking}</CodeBlock>
+  </TabItem>
+  <TabItem value="prompt" label="Prompt">
+    <CodeBlock language="markdown">{Prompt}</CodeBlock>
+  </TabItem>
+</Tabs>
