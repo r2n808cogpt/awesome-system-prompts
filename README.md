@@ -50,7 +50,10 @@ An opinionated list of awesome system prompts for various AI models.
 
 ### [Cursor](https://www.cursor.com)
 
-- [Agent](docs/assets/cursor/agent.txt)
+- [Agent Tools v1](docs/assets/cursor/agent-tools-v1.txt)
+- [Agent v1.0](docs/assets/cursor/agent-v1_0.txt)
+- [Agent v1.1](docs/assets/cursor/agent-v1_1.txt)
+- [Agent v1.2](docs/assets/cursor/agent-v1_2.txt)
 - [Chat](docs/assets/cursor/chat.txt)
 - [Memory Rating](docs/assets/cursor/memory-rating.txt)
 - [Memory](docs/assets/cursor/memory.txt)
@@ -115,6 +118,11 @@ An opinionated list of awesome system prompts for various AI models.
 - [Summary](docs/assets/openai/summary.json)
 - [System](docs/assets/openai/system.txt)
 
+### [Orchids](https://www.orchids.app/)
+
+- [Decision Making](docs/assets/orchids/decision-making.txt)
+- [Prompt](docs/assets/orchids/prompt.txt)
+
 ### [Perplexity](https://www.perplexity.ai)
 
 - [Prompt](docs/assets/perplexity/prompt.txt)
@@ -130,7 +138,7 @@ An opinionated list of awesome system prompts for various AI models.
 
 ### [Same-Dev](https://www.same.dev)
 
-- [Prompt](docs/assets/same-dev/prompt-2025.txt)
+- [Prompt](docs/assets/same-dev/prompt.txt)
 - [Tools](docs/assets/same-dev/tools.json)
 
 ### [Trae](https://trae.ai)
@@ -149,6 +157,10 @@ An opinionated list of awesome system prompts for various AI models.
 
 - [Prompt](docs/assets/vscode/prompt.txt)
 
+### [Warp](https://www.warp.dev)
+
+- [Prompt](docs/assets/warp/prompt.txt)
+
 ### [Whatsapp](https://www.whatsapp.com)
 
 - [Llama 4](docs/assets/whatsapp/llama4.txt)
@@ -159,3 +171,12 @@ An opinionated list of awesome system prompts for various AI models.
 - [Prompt](docs/assets/windsurf/prompt.txt)
 - [System](docs/assets/windsurf/system.txt)
 - [Tools](docs/assets/windsurf/tools.json)
+
+### [Xcode](https://developer.apple.com/xcode/)
+
+- [Document Action](docs/assets/xcode/document-action.txt)
+- [Explain Action](docs/assets/xcode/explain-action.txt)
+- [Message Action](docs/assets/xcode/message-action.txt)
+- [Playground Action](docs/assets/xcode/playground-action.txt)
+- [Preview Action](docs/assets/xcode/preview-action.txt)
+- [System Action](docs/assets/xcode/system.txt)
