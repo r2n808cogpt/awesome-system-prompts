@@ -34,6 +34,9 @@ const config = {
             "https://github.com/EliFuzz/awesome-system-prompts/blob/main/",
         },
         blog: false,
+        theme: {
+          customCss: ["./static/css/custom.css"],
+        },
       }),
     ],
   ],
