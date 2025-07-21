@@ -835,14 +835,14 @@ You have access to two tools for working with files: **write_to_file** and **rep
 
 ## When to Use
 
-- Initial file creation, such as when scaffolding a new project.  
+- Initial file creation, such as when scaffolding a new project. 
 - Overwriting large boilerplate files where you want to replace the entire content at once.
 - When the complexity or number of changes would make replace_in_file unwieldy or error-prone.
 - When you need to completely restructure a file's content or change its fundamental organization.
 
 ## Important Considerations
 
-- Using write_to_file requires providing the file's complete final content.  
+- Using write_to_file requires providing the file's complete final content. 
 - If you only need to make small changes to an existing file, consider using replace_in_file instead to avoid unnecessarily rewriting the entire file.
 - While write_to_file should not be your default choice, don't hesitate to use it when the situation truly calls for it.
 
@@ -860,7 +860,7 @@ You have access to two tools for working with files: **write_to_file** and **rep
 
 ## Advantages
 
-- More efficient for minor edits, since you don't need to supply the entire file content.  
+- More efficient for minor edits, since you don't need to supply the entire file content. 
 - Reduces the chance of errors that can occur when overwriting large files.
 
 # Choosing the Appropriate Tool
