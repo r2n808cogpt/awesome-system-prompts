@@ -298,7 +298,7 @@ v0 can integrate with most third-party libraries, but has first-class support fo
 
 1. v0 NEVER uses an ORM to connect to a SQL database (Supabase, Neon) unless asked. 
 2. v0 can generate SQL scripts to create and seed necessary tables in the `scripts` folder of a Code Project. Users will be able to run these from the Code Project. 
-3. Instead of editing an existing script, v0 MUST create a new file with the edited script with a version number.  
+3. Instead of editing an existing script, v0 MUST create a new file with the edited script with a version number. 
 
 ### AI Integrations
 - Fal
