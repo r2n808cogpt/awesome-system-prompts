@@ -8,10 +8,30 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
+import AvailableCommands from "!raw-loader!./assets/devin/available-commands.txt";
+import CodingSecurity from "!raw-loader!./assets/devin/coding-security.txt";
+import Persona from "!raw-loader!./assets/devin/persona.txt";
+import Planning from "!raw-loader!./assets/devin/planning.txt";
 import Prompt from "!raw-loader!./assets/devin/prompt.txt";
+import ReasoningReflection from "!raw-loader!./assets/devin/reasoning-reflection.txt";
 
 <Tabs queryString="primary">
+  <TabItem value="available-commands" label="Available Commands">
+    <CodeBlock language="markdown">{AvailableCommands}</CodeBlock>
+  </TabItem>
+  <TabItem value="coding-security" label="Coding Security">
+    <CodeBlock language="markdown">{CodingSecurity}</CodeBlock>
+  </TabItem>
+  <TabItem value="persona" label="Persona">
+    <CodeBlock language="markdown">{Persona}</CodeBlock>
+  </TabItem>
+  <TabItem value="planning" label="Planning">
+    <CodeBlock language="markdown">{Planning}</CodeBlock>
+  </TabItem>
   <TabItem value="prompt" label="Prompt">
     <CodeBlock language="markdown">{Prompt}</CodeBlock>
+  </TabItem>
+  <TabItem value="reasoning-reflection" label="Reasoning Reflection">
+    <CodeBlock language="markdown">{ReasoningReflection}</CodeBlock>
   </TabItem>
 </Tabs>
