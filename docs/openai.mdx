@@ -8,50 +8,259 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
-import ChatGPT45 from "!!raw-loader!./assets/openai/4-5.txt";
-import ChatGPT4o from "!!raw-loader!./assets/openai/4o.txt";
-import ChatGPTDalle from "!!raw-loader!./assets/openai/dalle.txt";
-import EditAudio from "!!raw-loader!./assets/openai/edit-audio.py";
-import EditText from "!!raw-loader!./assets/openai/edit-text.py";
-import FunctionSchema from "!!raw-loader!./assets/openai/function-schema.py";
-import MetaAudio from "!!raw-loader!./assets/openai/meta-audio.py";
-import MetaSchema from "!!raw-loader!./assets/openai/meta-schema.py";
-import MetaText from "!!raw-loader!./assets/openai/meta-text.py";
-import ChatGPTSummary from "!!raw-loader!./assets/openai/summary.json";
-import ChatGPTSystem from "!!raw-loader!./assets/openai/system.txt";
+import Summary from "!!raw-loader!./assets/openai/summary.json";
+import AdvancedVoiceMode from "!raw-loader!./assets/openai/advanced-voice-mode.txt";
+import AutomationContext from "!raw-loader!./assets/openai/automation-context.txt";
+import Codex from "!raw-loader!./assets/openai/codex.txt";
+import Dalle from "!raw-loader!./assets/openai/dalle.txt";
+import EditAudio from "!raw-loader!./assets/openai/edit-audio.py";
+import EditText from "!raw-loader!./assets/openai/edit-text.py";
+import FunctionSchema from "!raw-loader!./assets/openai/function-schema.py";
+import Gpt41 from "!raw-loader!./assets/openai/gpt-41.txt";
+import Gpt41Mini from "!raw-loader!./assets/openai/gpt-41_mini.txt";
+import Gpt45BaseInformation from "!raw-loader!./assets/openai/gpt-45-base-information.txt";
+import Gpt45Guidelines from "!raw-loader!./assets/openai/gpt-45-guidelines.txt";
+import Gpt45ImageCapabilities from "!raw-loader!./assets/openai/gpt-45-image-capabilities.txt";
+import Gpt45Tools from "!raw-loader!./assets/openai/gpt-45-tools.txt";
+import Gpt45 from "!raw-loader!./assets/openai/gpt-45.txt";
+import Gpt4oAdvancedVoiceMode from "!raw-loader!./assets/openai/gpt-4o-advanced-voice-mode.txt";
+import Gpt4oImageSafetyPolicies from "!raw-loader!./assets/openai/gpt-4o-image-safety-policies.txt";
+import Gpt4oLegacyVoiceMode from "!raw-loader!./assets/openai/gpt-4o-legacy-voice-mode.txt";
+import Gpt4oMini from "!raw-loader!./assets/openai/gpt-4o-mini.txt";
+import Gpt4o from "!raw-loader!./assets/openai/gpt-4o.txt";
+import Gpt4oMini2024 from "!raw-loader!./assets/openai/gpt-4o_mini-2024_06_01.txt";
+import Gpt4oMini2025 from "!raw-loader!./assets/openai/gpt-4o_mini-2025_06_04.txt";
+import GptAutomationTool from "!raw-loader!./assets/openai/gpt-automation-tool.txt";
+import GptO3ApiVariations from "!raw-loader!./assets/openai/gpt-o3-api-variations.txt";
+import GptO3CanmoreCanvasTool from "!raw-loader!./assets/openai/gpt-o3-canmore-canvas-tool.txt";
+import GptO3OtherTools from "!raw-loader!./assets/openai/gpt-o3-other-tools.txt";
+import GptO3PythonTools from "!raw-loader!./assets/openai/gpt-o3-python-tools.txt";
+import GptO3 from "!raw-loader!./assets/openai/gpt-o3.txt";
+import GptO4Mini from "!raw-loader!./assets/openai/gpt-o4-mini.txt";
+import ImageSafetyPolicies from "!raw-loader!./assets/openai/image-safety-policies.txt";
+import MetaAudio from "!raw-loader!./assets/openai/meta-audio.py";
+import MetaSchema from "!raw-loader!./assets/openai/meta-schema.py";
+import MetaText from "!raw-loader!./assets/openai/meta-text.py";
+import OpenAI2022_12_01 from "!raw-loader!./assets/openai/openai-2022_12_01.txt";
+import OpenAI2023_06_14 from "!raw-loader!./assets/openai/openai-2023_06_14.txt";
+import OpenAI2023_11_06 from "!raw-loader!./assets/openai/openai-2023_11_06.txt";
+import OpenAI2024_02_07 from "!raw-loader!./assets/openai/openai-2024_02_07.txt";
+import OpenAI2024_05_20 from "!raw-loader!./assets/openai/openai-2024_05_20.txt";
+import OpenAI2025_03_24 from "!raw-loader!./assets/openai/openai-2025_03_24.txt";
+import OpenAI2025_05_06 from "!raw-loader!./assets/openai/openai-2025_05_06.txt";
+import OpenAI20231007_1 from "!raw-loader!./assets/openai/openai-dall-e-3_20231007-1.txt";
+import OpenAI20231007_2 from "!raw-loader!./assets/openai/openai-dall-e-3_20231007-2.txt";
+import OpenAIDeepResearch from "!raw-loader!./assets/openai/openai-deep-research.txt";
+import OpenAIDeepResearch20250204 from "!raw-loader!./assets/openai/openai-deep-research_20250204.txt";
+import OpenAIVoiceMode2025_07_06 from "!raw-loader!./assets/openai/openai-voice-mode-2025_07_06.txt";
+import PersonaTone from "!raw-loader!./assets/openai/persona-tone.txt";
+import System from "!raw-loader!./assets/openai/system.txt";
+import ToolCanvas from "!raw-loader!./assets/openai/tool-canvas.txt";
+import ToolChannels from "!raw-loader!./assets/openai/tool-channels.txt";
+import ToolChatHistory from "!raw-loader!./assets/openai/tool-chat-history.txt";
+import ToolDeepResearch from "!raw-loader!./assets/openai/tool-deep-research.txt";
+import ToolFileSearch from "!raw-loader!./assets/openai/tool-file-search.txt";
+import ToolImageGen from "!raw-loader!./assets/openai/tool-image-gen.txt";
+import ToolMemoryBio from "!raw-loader!./assets/openai/tool-memory-bio.txt";
+import ToolPython from "!raw-loader!./assets/openai/tool-python.txt";
+import ToolStudyTogether from "!raw-loader!./assets/openai/tool-study-together.txt";
+import ToolWebSearch from "!raw-loader!./assets/openai/tool-web-search.txt";
+import WebBrowsingPolicy from "!raw-loader!./assets/openai/web-browsing-policy.txt";
 
 <Tabs queryString="primary">
-  <TabItem value="4-5" label="GPT-4.5">
-    <CodeBlock language="markdown">{ChatGPT45}</CodeBlock>
+  <TabItem value="advanced-voice-mode" label="Advanced Voice Mode">
+    <CodeBlock language="markdown">{AdvancedVoiceMode}</CodeBlock>
   </TabItem>
-  <TabItem value="4o" label="GPT-4o">
-    <CodeBlock language="markdown">{ChatGPT4o}</CodeBlock>
+  <TabItem value="automation-context" label="Automation Context">
+    <CodeBlock language="markdown">{AutomationContext}</CodeBlock>
   </TabItem>
-  <TabItem value="dalle" label="DALL-E">
-    <CodeBlock language="markdown">{ChatGPTDalle}</CodeBlock>
+  <TabItem value="codex" label="Codex">
+    <CodeBlock language="markdown">{Codex}</CodeBlock>
   </TabItem>
-  <TabItem value="summary" label="Summary">
-    <CodeBlock language="json">{ChatGPTSummary}</CodeBlock>
-  </TabItem>
-  <TabItem value="system" label="System">
-    <CodeBlock language="markdown">{ChatGPTSystem}</CodeBlock>
-  </TabItem>
-  <TabItem value="meta-text" label="Meta Text">
-    <CodeBlock language="python">{MetaText}</CodeBlock>
-  </TabItem>
-  <TabItem value="meta-audio" label="Meta Audio">
-    <CodeBlock language="python">{MetaAudio}</CodeBlock>
-  </TabItem>
-  <TabItem value="edit-text" label="Edit Text">
-    <CodeBlock language="python">{EditText}</CodeBlock>
+  <TabItem value="dalle" label="DALL·E">
+    <CodeBlock language="markdown">{Dalle}</CodeBlock>
   </TabItem>
   <TabItem value="edit-audio" label="Edit Audio">
     <CodeBlock language="python">{EditAudio}</CodeBlock>
   </TabItem>
-  <TabItem value="meta-schema" label="Meta Schema">
-    <CodeBlock language="python">{MetaSchema}</CodeBlock>
+  <TabItem value="edit-text" label="Edit Text">
+    <CodeBlock language="python">{EditText}</CodeBlock>
   </TabItem>
   <TabItem value="function-schema" label="Function Schema">
     <CodeBlock language="python">{FunctionSchema}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-41" label="GPT-4.1">
+    <CodeBlock language="markdown">{Gpt41}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-41-mini" label="GPT-4.1 Mini">
+    <CodeBlock language="markdown">{Gpt41Mini}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-45-base-information" label="GPT-4.5 Base Information">
+    <CodeBlock language="markdown">{Gpt45BaseInformation}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-45-guidelines" label="GPT-4.5 Guidelines">
+    <CodeBlock language="markdown">{Gpt45Guidelines}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-45-image-capabilities" label="GPT-4.5 Image Capabilities">
+    <CodeBlock language="markdown">{Gpt45ImageCapabilities}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-45-tools" label="GPT-4.5 Tools">
+    <CodeBlock language="markdown">{Gpt45Tools}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-45" label="GPT-4.5">
+    <CodeBlock language="markdown">{Gpt45}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="gpt-4o-advanced-voice-mode"
+    label="GPT-4o Advanced Voice Mode"
+  >
+    <CodeBlock language="markdown">{Gpt4oAdvancedVoiceMode}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="gpt-4o-image-safety-policies"
+    label="GPT-4o Image Safety Policies"
+  >
+    <CodeBlock language="markdown">{Gpt4oImageSafetyPolicies}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-4o-legacy-voice-mode" label="GPT-4o Legacy Voice Mode">
+    <CodeBlock language="markdown">{Gpt4oLegacyVoiceMode}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-4o-mini" label="GPT-4o Mini">
+    <CodeBlock language="markdown">{Gpt4oMini}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-4o" label="GPT-4o">
+    <CodeBlock language="markdown">{Gpt4o}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-4o-mini-2024" label="GPT-4o Mini (2024-06-01)">
+    <CodeBlock language="markdown">{Gpt4oMini2024}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-4o-mini-2025" label="GPT-4o Mini (2025-06-04)">
+    <CodeBlock language="markdown">{Gpt4oMini2025}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-automation-tool" label="GPT Automation Tool">
+    <CodeBlock language="markdown">{GptAutomationTool}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-o3-api-variations" label="GPT O3 API Variations">
+    <CodeBlock language="markdown">{GptO3ApiVariations}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="gpt-o3-canmore-canvas-tool"
+    label="GPT O3 Canmore Canvas Tool"
+  >
+    <CodeBlock language="markdown">{GptO3CanmoreCanvasTool}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-o3-other-tools" label="GPT O3 Other Tools">
+    <CodeBlock language="markdown">{GptO3OtherTools}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-o3-python-tools" label="GPT O3 Python Tools">
+    <CodeBlock language="markdown">{GptO3PythonTools}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-o3" label="GPT O3">
+    <CodeBlock language="markdown">{GptO3}</CodeBlock>
+  </TabItem>
+  <TabItem value="gpt-o4-mini" label="GPT O4 Mini">
+    <CodeBlock language="markdown">{GptO4Mini}</CodeBlock>
+  </TabItem>
+  <TabItem value="image-safety-policies" label="Image Safety Policies">
+    <CodeBlock language="markdown">{ImageSafetyPolicies}</CodeBlock>
+  </TabItem>
+  <TabItem value="meta-audio" label="Meta Audio">
+    <CodeBlock language="python">{MetaAudio}</CodeBlock>
+  </TabItem>
+  <TabItem value="meta-schema" label="Meta Schema">
+    <CodeBlock language="python">{MetaSchema}</CodeBlock>
+  </TabItem>
+  <TabItem value="meta-text" label="Meta Text">
+    <CodeBlock language="python">{MetaText}</CodeBlock>
+  </TabItem>
+  <TabItem value="openai-2022-12-01" label="OpenAI (2022-12-01)">
+    <CodeBlock language="markdown">{OpenAI2022_12_01}</CodeBlock>
+  </TabItem>
+  <TabItem value="openai-2023-06-14" label="OpenAI (2023-06-14)">
+    <CodeBlock language="markdown">{OpenAI2023_06_14}</CodeBlock>
+  </TabItem>
+  <TabItem value="openai-2023-11-06" label="OpenAI (2023-11-06)">
+    <CodeBlock language="markdown">{OpenAI2023_11_06}</CodeBlock>
+  </TabItem>
+  <TabItem value="openai-2024-02-07" label="OpenAI (2024-02-07)">
+    <CodeBlock language="markdown">{OpenAI2024_02_07}</CodeBlock>
+  </TabItem>
+  <TabItem value="openai-2024-05-20" label="OpenAI (2024-05-20)">
+    <CodeBlock language="markdown">{OpenAI2024_05_20}</CodeBlock>
+  </TabItem>
+  <TabItem value="openai-2025-03-24" label="OpenAI (2025-03-24)">
+    <CodeBlock language="markdown">{OpenAI2025_03_24}</CodeBlock>
+  </TabItem>
+  <TabItem value="openai-2025-05-06" label="OpenAI (2025-05-06)">
+    <CodeBlock language="markdown">{OpenAI2025_05_06}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="openai-dall-e-3-20231007-1"
+    label="OpenAI DALL·E 3 (2023-10-07-1)"
+  >
+    <CodeBlock language="markdown">{OpenAIDallE31007_1}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="openai-dall-e-3-20231007-2"
+    label="OpenAI DALL·E 3 (2023-10-07-2)"
+  >
+    <CodeBlock language="markdown">{OpenAIDallE31007_2}</CodeBlock>
+  </TabItem>
+  <TabItem value="openai-deep-research" label="OpenAI Deep Research">
+    <CodeBlock language="markdown">{OpenAIDeepResearch}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="openai-deep-research-20250204"
+    label="OpenAI Deep Research (2025-02-04)"
+  >
+    <CodeBlock language="markdown">{OpenAIDeepResearch20250204}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="openai-voice-mode-2025-07-06"
+    label="OpenAI Voice Mode (2025-07-06)"
+  >
+    <CodeBlock language="markdown">{OpenAIVoiceMode2025_07_06}</CodeBlock>
+  </TabItem>
+  <TabItem value="persona-tone" label="Persona Tone">
+    <CodeBlock language="markdown">{PersonaTone}</CodeBlock>
+  </TabItem>
+  <TabItem value="summary" label="Summary">
+    <CodeBlock language="json">{Summary}</CodeBlock>
+  </TabItem>
+  <TabItem value="system" label="System">
+    <CodeBlock language="markdown">{System}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-canvas" label="Tool Canvas">
+    <CodeBlock language="markdown">{ToolCanvas}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-channels" label="Tool Channels">
+    <CodeBlock language="markdown">{ToolChannels}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-chat-history" label="Tool Chat History">
+    <CodeBlock language="markdown">{ToolChatHistory}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-deep-research" label="Tool Deep Research">
+    <CodeBlock language="markdown">{ToolDeepResearch}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-file-search" label="Tool File Search">
+    <CodeBlock language="markdown">{ToolFileSearch}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-image-gen" label="Tool Image Gen">
+    <CodeBlock language="markdown">{ToolImageGen}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-memory-bio" label="Tool Memory Bio">
+    <CodeBlock language="markdown">{ToolMemoryBio}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-python" label="Tool Python">
+    <CodeBlock language="markdown">{ToolPython}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-study-together" label="Tool Study Together">
+    <CodeBlock language="markdown">{ToolStudyTogether}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-web-search" label="Tool Web Search">
+    <CodeBlock language="markdown">{ToolWebSearch}</CodeBlock>
+  </TabItem>
+  <TabItem value="web-browsing-policy" label="Web Browsing Policy">
+    <CodeBlock language="markdown">{WebBrowsingPolicy}</CodeBlock>
   </TabItem>
 </Tabs>
