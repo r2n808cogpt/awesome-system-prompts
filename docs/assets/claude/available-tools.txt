@@ -1,0 +1,17 @@
+- **`FileReadTool` (View):** Reads a file from the local filesystem. It takes an absolute `file_path` and optional `offset` and `limit` for large files.
+- **`ListFilesTool` (LS):** Lists files and directories in a given absolute `path`. It is noted that `Glob` and `Grep` should be preferred if the search directory is known.
+- **`GrepTool` (Grep):** Searches for a `pattern` within files in a specified `path`. It supports `glob` patterns for file inclusion/exclusion and can be case-sensitive.
+- **`GlobTool` (Glob):** Finds files matching a `glob` pattern in a given `path`.
+- **`EditFileTool` (Edit):** Applies edits to a file. It takes a `file_path`, a `prompt` describing the changes, and optional `old_source` and `new_source` for diff-based edits.
+- **`MoveFileTool` (Move):** Moves or renames a file from `old_path` to `new_path`.
+- **`CreateFileTool` (Create):** Creates a new file at a given `file_path` with specified `content`.
+- **`DeleteFileTool` (Delete):** Deletes a file at a specified `file_path`.
+- **`BashTool` (Bash):** Executes a bash `command`. The system includes security checks for command prefixes and banned commands.
+- **`JupyterTool` (Jupyter):** Interacts with Jupyter notebooks (`.ipynb` files), allowing actions like reading, editing, and running cells.
+- **`ReplaceInFileTool` (Replace):** Replaces an `old_string` with a `new_string` in a given `file_path`.
+- **`GitAddTool` (git add):** Stages changes for a commit.
+- **`GitCommitTool` (git commit):** Creates a new commit with a given `message`.
+- **`GitDiffTool` (git diff):** Shows differences between commits, branches, or files.
+- **`GitApplyTool` (git apply):** Applies a patch.
+- **`GitCheckoutTool` (git checkout):** Switches branches or restores working tree files.
+- **`IssueTool` (Create Issue):** Creates a new issue in the associated GitHub repository with a given `title` and `body`.

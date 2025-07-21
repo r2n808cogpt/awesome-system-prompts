@@ -8,14 +8,129 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
-import Prompt from "!raw-loader!./assets/claude/sonnet-3.7-2025.txt";
-import SonnetPrompt from "!raw-loader!./assets/claude/sonnet-3.7.txt";
+import ApiTools from "!raw-loader!./assets/claude/api-tools-2025_01_19.txt";
+import Artifacts from "!raw-loader!./assets/claude/artifacts-2024_06_20.txt";
+import AvailableTools from "!raw-loader!./assets/claude/available-tools.txt";
+import BashSecurity from "!raw-loader!./assets/claude/bash-security.txt";
+import Citations from "!raw-loader!./assets/claude/citations.txt";
+import Claude from "!raw-loader!./assets/claude/claude.txt";
+import CopyrightSafety from "!raw-loader!./assets/claude/copyright-safety.txt";
+import CorePersona from "!raw-loader!./assets/claude/core-persona.txt";
+import Guidelines from "!raw-loader!./assets/claude/guidelines.txt";
+import Injections from "!raw-loader!./assets/claude/injections.txt";
+import Memory from "!raw-loader!./assets/claude/memory.txt";
+import SearchReminders from "!raw-loader!./assets/claude/search-reminders.txt";
+import Sonnet3_5_2024_07_12 from "!raw-loader!./assets/claude/sonnet-3_5-2024_07_12.txt";
+import Sonnet3_5_2024_09_09 from "!raw-loader!./assets/claude/sonnet-3_5-2024_09_09.txt";
+import Sonnet3_5_2024_10_22 from "!raw-loader!./assets/claude/sonnet-3_5-2024_10_22.txt";
+import Sonnet3_7_2025 from "!raw-loader!./assets/claude/sonnet-3_7-2025.txt";
+import Sonnet3_7_2025_02_24 from "!raw-loader!./assets/claude/sonnet-3_7-2025_02_24.txt";
+import Sonnet3_7_Artifacts from "!raw-loader!./assets/claude/sonnet-3_7-artifacts.txt";
+import Sonnet3_7_SystemMessage from "!raw-loader!./assets/claude/sonnet-3_7-system-message.txt";
+import Sonnet3_7_ToolUsages from "!raw-loader!./assets/claude/sonnet-3_7-tool-usages.txt";
+import Sonnet3_7_Tools from "!raw-loader!./assets/claude/sonnet-3_7-tools.txt";
+import Sonnet3_7_UserPreferences from "!raw-loader!./assets/claude/sonnet-3_7-user-preferences.txt";
+import Sonnet3_7 from "!raw-loader!./assets/claude/sonnet-3_7.txt";
+import Sonnet4_Persona from "!raw-loader!./assets/claude/sonnet-4-persona.txt";
+import Sonnet4_Personalization from "!raw-loader!./assets/claude/sonnet-4-personalization.txt";
+import Sonnet4_Tools from "!raw-loader!./assets/claude/sonnet-4-tools.txt";
+import Sonnet4 from "!raw-loader!./assets/claude/sonnet-4.txt";
+import StyleModes from "!raw-loader!./assets/claude/style-modes.txt";
+import ToolUsage from "!raw-loader!./assets/claude/tool-usage.txt";
+import WebSearchInstructions from "!raw-loader!./assets/claude/web-search-instructions.txt";
 
 <Tabs queryString="primary">
-  <TabItem value="prompt" label="Prompt">
-    <CodeBlock language="markdown">{Prompt}</CodeBlock>
+  <TabItem value="api-tools" label="API Tools">
+    <CodeBlock language="markdown">{ApiTools}</CodeBlock>
   </TabItem>
-  <TabItem value="sonnet-prompt" label="Sonnet Prompt">
-    <CodeBlock language="markdown">{SonnetPrompt}</CodeBlock>
+  <TabItem value="artifacts" label="Artifacts">
+    <CodeBlock language="markdown">{Artifacts}</CodeBlock>
+  </TabItem>
+  <TabItem value="available-tools" label="Available Tools">
+    <CodeBlock language="markdown">{AvailableTools}</CodeBlock>
+  </TabItem>
+  <TabItem value="bash-security" label="Bash Security">
+    <CodeBlock language="markdown">{BashSecurity}</CodeBlock>
+  </TabItem>
+  <TabItem value="citations" label="Citations">
+    <CodeBlock language="markdown">{Citations}</CodeBlock>
+  </TabItem>
+  <TabItem value="claude" label="Claude">
+    <CodeBlock language="markdown">{Claude}</CodeBlock>
+  </TabItem>
+  <TabItem value="copyright-safety" label="Copyright Safety">
+    <CodeBlock language="markdown">{CopyrightSafety}</CodeBlock>
+  </TabItem>
+  <TabItem value="core-persona" label="Core Persona">
+    <CodeBlock language="markdown">{CorePersona}</CodeBlock>
+  </TabItem>
+  <TabItem value="guidelines" label="Guidelines">
+    <CodeBlock language="markdown">{Guidelines}</CodeBlock>
+  </TabItem>
+  <TabItem value="injections" label="Injections">
+    <CodeBlock language="markdown">{Injections}</CodeBlock>
+  </TabItem>
+  <TabItem value="memory" label="Memory">
+    <CodeBlock language="markdown">{Memory}</CodeBlock>
+  </TabItem>
+  <TabItem value="search-reminders" label="Search Reminders">
+    <CodeBlock language="markdown">{SearchReminders}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_5-2024_07_12" label="Sonnet 3.5 (2024-07-12)">
+    <CodeBlock language="markdown">{Sonnet3_5_2024_07_12}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_5-2024_09_09" label="Sonnet 3.5 (2024-09-09)">
+    <CodeBlock language="markdown">{Sonnet3_5_2024_09_09}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_5-2024_10_22" label="Sonnet 3.5 (2024-10-22)">
+    <CodeBlock language="markdown">{Sonnet3_5_2024_10_22}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_7-2025" label="Sonnet 3.7 (2025)">
+    <CodeBlock language="markdown">{Sonnet3_7_2025}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_7-2025_02_24" label="Sonnet 3.7 (2025-02-24)">
+    <CodeBlock language="markdown">{Sonnet3_7_2025_02_24}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_7-artifacts" label="Sonnet 3.7 Artifacts">
+    <CodeBlock language="markdown">{Sonnet3_7_Artifacts}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_7-system-message" label="Sonnet 3.7 System Message">
+    <CodeBlock language="markdown">{Sonnet3_7_SystemMessage}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_7-tool-usages" label="Sonnet 3.7 Tool Usages">
+    <CodeBlock language="markdown">{Sonnet3_7_ToolUsages}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_7-tools" label="Sonnet 3.7 Tools">
+    <CodeBlock language="markdown">{Sonnet3_7_Tools}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="sonnet-3_7-user-preferences"
+    label="Sonnet 3.7 User Preferences"
+  >
+    <CodeBlock language="markdown">{Sonnet3_7_UserPreferences}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_7" label="Sonnet 3.7">
+    <CodeBlock language="markdown">{Sonnet3_7}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-4-persona" label="Sonnet 4 Persona">
+    <CodeBlock language="markdown">{Sonnet4_Persona}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-4-personalization" label="Sonnet 4 Personalization">
+    <CodeBlock language="markdown">{Sonnet4_Personalization}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-4-tools" label="Sonnet 4 Tools">
+    <CodeBlock language="markdown">{Sonnet4_Tools}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-4" label="Sonnet 4">
+    <CodeBlock language="markdown">{Sonnet4}</CodeBlock>
+  </TabItem>
+  <TabItem value="style-modes" label="Style Modes">
+    <CodeBlock language="markdown">{StyleModes}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-usage" label="Tool Usage">
+    <CodeBlock language="markdown">{ToolUsage}</CodeBlock>
+  </TabItem>
+  <TabItem value="web-search-instructions" label="Web Search Instructions">
+    <CodeBlock language="markdown">{WebSearchInstructions}</CodeBlock>
   </TabItem>
 </Tabs>
