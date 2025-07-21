@@ -8,14 +8,46 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
-import PromptRecent from "!raw-loader!./assets/lovable/prompt-2025.txt";
+import CorePrinciples from "!raw-loader!./assets/lovable/core-principles.txt";
+import DrivenDevelopment from "!raw-loader!./assets/lovable/driven-development.txt";
+import FileOperations from "!raw-loader!./assets/lovable/file-operations.txt";
+import IncludedCodebase from "!raw-loader!./assets/lovable/included-codebase.txt";
+import ModesOperation from "!raw-loader!./assets/lovable/modes-operation.txt";
+import Persona from "!raw-loader!./assets/lovable/persona.txt";
+import Prompt2025 from "!raw-loader!./assets/lovable/prompt-2025.txt";
 import Prompt from "!raw-loader!./assets/lovable/prompt.txt";
+import ResponseStructure from "!raw-loader!./assets/lovable/response-structure.txt";
+import SpecialInstructions from "!raw-loader!./assets/lovable/special-instructions.txt";
 
 <Tabs queryString="primary">
+  <TabItem value="core-principles" label="Core Principles">
+    <CodeBlock language="markdown">{CorePrinciples}</CodeBlock>
+  </TabItem>
+  <TabItem value="driven-development" label="Driven Development">
+    <CodeBlock language="markdown">{DrivenDevelopment}</CodeBlock>
+  </TabItem>
+  <TabItem value="file-operations" label="File Operations">
+    <CodeBlock language="markdown">{FileOperations}</CodeBlock>
+  </TabItem>
+  <TabItem value="included-codebase" label="Included Codebase">
+    <CodeBlock language="markdown">{IncludedCodebase}</CodeBlock>
+  </TabItem>
+  <TabItem value="modes-operation" label="Modes of Operation">
+    <CodeBlock language="markdown">{ModesOperation}</CodeBlock>
+  </TabItem>
+  <TabItem value="persona" label="Persona">
+    <CodeBlock language="markdown">{Persona}</CodeBlock>
+  </TabItem>
+  <TabItem value="prompt-2025" label="Prompt 2025">
+    <CodeBlock language="markdown">{Prompt2025}</CodeBlock>
+  </TabItem>
   <TabItem value="prompt" label="Prompt">
     <CodeBlock language="markdown">{Prompt}</CodeBlock>
   </TabItem>
-  <TabItem value="prompt-recent" label="Prompt Recent">
-    <CodeBlock language="markdown">{PromptRecent}</CodeBlock>
+  <TabItem value="response-structure" label="Response Structure">
+    <CodeBlock language="markdown">{ResponseStructure}</CodeBlock>
+  </TabItem>
+  <TabItem value="special-instructions" label="Special Instructions">
+    <CodeBlock language="markdown">{SpecialInstructions}</CodeBlock>
   </TabItem>
 </Tabs>
