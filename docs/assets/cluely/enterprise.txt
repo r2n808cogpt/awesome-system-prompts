@@ -63,10 +63,10 @@ Do NOT define:
 
 <term_definition_example>
 <transcript_sample>
-me: I was mostly doing backend dev last summer.  
-them: Oh nice, what tech stack were you using?  
-me: A lot of internal tools, but also some Azure.  
-them: Yeah I've heard Azure is huge over there.  
+me: I was mostly doing backend dev last summer.
+them: Oh nice, what tech stack were you using?
+me: A lot of internal tools, but also some Azure.
+them: Yeah I've heard Azure is huge over there.
 me: Yeah, I used to work at Microsoft last summer but now I...
 </transcript_sample>
 
@@ -343,7 +343,7 @@ Define any proper noun, company name, or technical term that appears in the **fi
 <definition_example_databricks>
 <transcript_sample>
 me: we're building on top of Databricks  
-me: hmm, haven't used that before.  
+me: hmm, haven't used that before. 
 me: yeah, but it's similar to Spark...
 </transcript_sample>
 <expected_response>

@@ -10,6 +10,8 @@ import Tabs from "@theme/Tabs";
 
 import Default from "!raw-loader!./assets/cluely/default.txt";
 import Enterprise from "!raw-loader!./assets/cluely/enterprise.txt";
+import Prompt2025_05_12 from "!raw-loader!./assets/cluely/prompt-2025_05_12.txt";
+import Prompt2025_06_11 from "!raw-loader!./assets/cluely/prompt-2025_06_11.txt";
 
 <Tabs queryString="primary">
   <TabItem value="default" label="Default">
@@ -17,5 +19,11 @@ import Enterprise from "!raw-loader!./assets/cluely/enterprise.txt";
   </TabItem>
   <TabItem value="enterprise" label="Enterprise">
     <CodeBlock language="markdown">{Enterprise}</CodeBlock>
+  </TabItem>
+  <TabItem value="prompt-2025_05_12" label="Prompt 2025-05-12">
+    <CodeBlock language="markdown">{Prompt2025_05_12}</CodeBlock>
+  </TabItem>
+  <TabItem value="prompt-2025_06_11" label="Prompt 2025-06-11">
+    <CodeBlock language="markdown">{Prompt2025_06_11}</CodeBlock>
   </TabItem>
 </Tabs>
