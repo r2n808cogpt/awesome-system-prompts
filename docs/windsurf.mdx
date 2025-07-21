@@ -9,17 +9,45 @@ import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
 import Tools from "!!raw-loader!./assets/windsurf/tools.json";
+import Communication from "!raw-loader!./assets/windsurf/communication.txt";
+import Examples from "!raw-loader!./assets/windsurf/examples.txt";
+import Guidelines from "!raw-loader!./assets/windsurf/guidelines.txt";
+import Persona from "!raw-loader!./assets/windsurf/persona.txt";
+import Prompt2024_12_06 from "!raw-loader!./assets/windsurf/prompt-2024_12_06.txt";
+import Prompt2025_02_01 from "!raw-loader!./assets/windsurf/prompt-2025_02_01.txt";
 import Prompt from "!raw-loader!./assets/windsurf/prompt.txt";
 import System from "!raw-loader!./assets/windsurf/system.txt";
+import ToolsDescription from "!raw-loader!./assets/windsurf/tools.txt";
 
 <Tabs queryString="primary">
+  <TabItem value="tools" label="Tools">
+    <CodeBlock language="markdown">{Tools}</CodeBlock>
+  </TabItem>
+  <TabItem value="communication" label="Communication">
+    <CodeBlock language="markdown">{Communication}</CodeBlock>
+  </TabItem>
+  <TabItem value="examples" label="Examples">
+    <CodeBlock language="markdown">{Examples}</CodeBlock>
+  </TabItem>
+  <TabItem value="guidelines" label="Guidelines">
+    <CodeBlock language="markdown">{Guidelines}</CodeBlock>
+  </TabItem>
+  <TabItem value="persona" label="Persona">
+    <CodeBlock language="markdown">{Persona}</CodeBlock>
+  </TabItem>
+  <TabItem value="prompt-2024-12-06" label="Prompt 2024-12-06">
+    <CodeBlock language="markdown">{Prompt2024_12_06}</CodeBlock>
+  </TabItem>
+  <TabItem value="prompt-2025-02-01" label="Prompt 2025-02-01">
+    <CodeBlock language="markdown">{Prompt2025_02_01}</CodeBlock>
+  </TabItem>
   <TabItem value="prompt" label="Prompt">
     <CodeBlock language="markdown">{Prompt}</CodeBlock>
   </TabItem>
   <TabItem value="system" label="System">
     <CodeBlock language="markdown">{System}</CodeBlock>
   </TabItem>
-  <TabItem value="tools" label="Tools">
-    <CodeBlock language="json">{Tools}</CodeBlock>
+  <TabItem value="tools-description" label="Tools Description">
+    <CodeBlock language="markdown">{ToolsDescription}</CodeBlock>
   </TabItem>
 </Tabs>
