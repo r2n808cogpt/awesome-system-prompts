@@ -8,9 +8,25 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
+import Copilot2023_05_13 from "!raw-loader!./assets/vscode/copilot-2023_05_13.txt";
+import Copilot2024_03_10 from "!raw-loader!./assets/vscode/copilot-2024_03_10.txt";
+import Copilot2024_09_30 from "!raw-loader!./assets/vscode/copilot-2024_09_30.txt";
+import Copilot2024_12_19 from "!raw-loader!./assets/vscode/copilot-2024_12_19.txt";
 import Prompt from "!raw-loader!./assets/vscode/prompt.txt";
 
 <Tabs queryString="primary">
+  <TabItem value="copilot-2023_05_13" label="Copilot 2023-05-13">
+    <CodeBlock language="markdown">{Copilot2023_05_13}</CodeBlock>
+  </TabItem>
+  <TabItem value="copilot-2024_03_10" label="Copilot 2024-03-10">
+    <CodeBlock language="markdown">{Copilot2024_03_10}</CodeBlock>
+  </TabItem>
+  <TabItem value="copilot-2024_09_30" label="Copilot 2024-09-30">
+    <CodeBlock language="markdown">{Copilot2024_09_30}</CodeBlock>
+  </TabItem>
+  <TabItem value="copilot-2024_12_19" label="Copilot 2024-12-19">
+    <CodeBlock language="markdown">{Copilot2024_12_19}</CodeBlock>
+  </TabItem>
   <TabItem value="prompt" label="Prompt">
     <CodeBlock language="markdown">{Prompt}</CodeBlock>
   </TabItem>
