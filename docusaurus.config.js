@@ -30,7 +30,8 @@ const config = {
         docs: {
           routeBasePath: "/",
           sidebarPath: "./sidebars.js",
-          editUrl: "https://github.com/EliFuzz/awesome-system-prompts",
+          editUrl:
+            "https://github.com/EliFuzz/awesome-system-prompts/blob/main/",
         },
         blog: false,
       }),
