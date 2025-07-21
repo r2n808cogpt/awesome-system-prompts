@@ -9,9 +9,13 @@ import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
 import Chat from "!raw-loader!./assets/mistral/chat.txt";
+import Mistral2025_04_25 from "!raw-loader!./assets/mistral/mistral-2025_04_25.txt";
 
 <Tabs queryString="primary">
   <TabItem value="chat" label="Chat">
     <CodeBlock language="markdown">{Chat}</CodeBlock>
+  </TabItem>
+  <TabItem value="mistral-2025-04-25" label="Mistral 2025 (04/25)">
+    <CodeBlock language="markdown">{Mistral2025_04_25}</CodeBlock>
   </TabItem>
 </Tabs>
