@@ -1,0 +1,43 @@
+---
+title: Gemini
+description: Gemini Prompt
+hide_table_of_contents: true
+---
+
+import CodeBlock from "@theme/CodeBlock";
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+import Gemini_2_0_Flash_Webapp from "!raw-loader!./assets/gemini/gemini-2.0-flash-webapp.txt";
+import Gemini_2_5_Pro_Webapp from "!raw-loader!./assets/gemini/gemini-2.5-pro-webapp.txt";
+import Gemini_Diffusion from "!raw-loader!./assets/gemini/gemini-diffusion.txt";
+import Google_Gemini_1_5_2024_04_11 from "!raw-loader!./assets/gemini/google-gemini-1_5-2024_04_11.txt";
+import Google_Gemini_CLI_2025_06_26 from "!raw-loader!./assets/gemini/google-gemini-cli-2025_06_26.txt";
+import Google_Stitch_2025_07_09 from "!raw-loader!./assets/gemini/google-stitch-2025_07_09.txt";
+
+<Tabs queryString="primary">
+  <TabItem value="gemini-2.0-flash-webapp" label="Gemini 2.0 Flash Webapp">
+    <CodeBlock language="markdown">{Gemini_2_0_Flash_Webapp}</CodeBlock>
+  </TabItem>
+  <TabItem value="gemini-2.5-pro-webapp" label="Gemini 2.5 Pro Webapp">
+    <CodeBlock language="markdown">{Gemini_2_5_Pro_Webapp}</CodeBlock>
+  </TabItem>
+  <TabItem value="gemini-diffusion" label="Gemini Diffusion">
+    <CodeBlock language="markdown">{Gemini_Diffusion}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="google-gemini-1_5-2024_04_11"
+    label="Google Gemini 1.5 (2024-04-11)"
+  >
+    <CodeBlock language="markdown">{Google_Gemini_1_5_2024_04_11}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="google-gemini-cli-2025_06_26"
+    label="Google Gemini CLI (2025-06-26)"
+  >
+    <CodeBlock language="markdown">{Google_Gemini_CLI_2025_06_26}</CodeBlock>
+  </TabItem>
+  <TabItem value="google-stitch-2025_07_09" label="Google Stitch (2025-07-09)">
+    <CodeBlock language="markdown">{Google_Stitch_2025_07_09}</CodeBlock>
+  </TabItem>
+</Tabs>
