@@ -8,22 +8,50 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
-import Agent from "!!raw-loader!./assets/manus/agent-loop.txt";
-import Module from "!!raw-loader!./assets/manus/module.txt";
-import Prompt from "!!raw-loader!./assets/manus/prompt.txt";
 import Tools from "!!raw-loader!./assets/manus/tools.json";
+import AgentLoop from "!raw-loader!./assets/manus/agent-loop.txt";
+import Environment from "!raw-loader!./assets/manus/environment.txt";
+import Guidelines from "!raw-loader!./assets/manus/guidelines.txt";
+import Module from "!raw-loader!./assets/manus/modules.txt";
+import Persona from "!raw-loader!./assets/manus/persona.txt";
+import Prompt2025_03_09 from "!raw-loader!./assets/manus/prompt-2025_03_09.txt";
+import Prompt2025_03_10 from "!raw-loader!./assets/manus/prompt-2025_03_10.txt";
+import Prompt from "!raw-loader!./assets/manus/prompt.txt";
+import PromptingGuide from "!raw-loader!./assets/manus/prompting-guide.txt";
+import ToolsTxt from "!raw-loader!./assets/manus/tools.txt";
 
 <Tabs queryString="primary">
-  <TabItem value="agent" label="Agent">
-    <CodeBlock language="markdown">{Agent}</CodeBlock>
+  <TabItem value="agent-loop" label="Agent Loop">
+    <CodeBlock language="markdown">{AgentLoop}</CodeBlock>
   </TabItem>
-  <TabItem value="modules" label="Modules">
+  <TabItem value="environment" label="Environment">
+    <CodeBlock language="markdown">{Environment}</CodeBlock>
+  </TabItem>
+  <TabItem value="guidelines" label="Guidelines">
+    <CodeBlock language="markdown">{Guidelines}</CodeBlock>
+  </TabItem>
+  <TabItem value="module" label="Module">
     <CodeBlock language="markdown">{Module}</CodeBlock>
+  </TabItem>
+  <TabItem value="persona" label="Persona">
+    <CodeBlock language="markdown">{Persona}</CodeBlock>
+  </TabItem>
+  <TabItem value="prompt-2025-03-09" label="Prompt 2025 (03/09)">
+    <CodeBlock language="markdown">{Prompt2025_03_09}</CodeBlock>
+  </TabItem>
+  <TabItem value="prompt-2025-03-10" label="Prompt 2025 (03/10)">
+    <CodeBlock language="markdown">{Prompt2025_03_10}</CodeBlock>
   </TabItem>
   <TabItem value="prompt" label="Prompt">
     <CodeBlock language="markdown">{Prompt}</CodeBlock>
   </TabItem>
+  <TabItem value="prompting-guide" label="Prompting Guide">
+    <CodeBlock language="markdown">{PromptingGuide}</CodeBlock>
+  </TabItem>
   <TabItem value="tools" label="Tools">
     <CodeBlock language="json">{Tools}</CodeBlock>
+  </TabItem>
+  <TabItem value="tools-description" label="Tools Description">
+    <CodeBlock language="markdown">{ToolsTxt}</CodeBlock>
   </TabItem>
 </Tabs>

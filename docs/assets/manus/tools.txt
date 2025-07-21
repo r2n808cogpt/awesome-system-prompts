@@ -1,0 +1,192 @@
+# Manus Agent Tools
+
+This document outlines the tools available to the Manus agent, categorized by their function.
+
+## Communication Tools
+These tools are used for interacting with the user.
+
+### `message_notify_user`
+- **Description:** Sends a message to the user without requiring a response. This is used for acknowledgements, progress updates, reporting task completion, or explaining changes in approach.
+- **Parameters:**
+    - `text` (string, required): The message text to display to the user.
+    - `attachments` (string or array of strings, optional): A list of file paths or URLs to attach to the message.
+
+### `message_ask_user`
+- **Description:** Asks the user a question and waits for a response. This is used for requesting clarification, asking for confirmation, or gathering additional information.
+- **Parameters:**
+    - `text` (string, required): The question to present to the user.
+    - `attachments` (string or array of strings, optional): A list of files or reference materials related to the question.
+    - `suggest_user_takeover` (enum, optional): Suggests a user takeover for a specific operation. Can be `none` or `browser`.
+
+## File System Tools
+These tools are for interacting with the file system.
+
+### `file_read`
+- **Description:** Reads the content of a file. This is useful for checking file contents, analyzing logs, or reading configuration files.
+- **Parameters:**
+    - `file` (string, required): The absolute path of the file to read.
+    - `start_line` (integer, optional): The 0-based starting line to read from.
+    - `end_line` (integer, optional): The exclusive ending line number.
+    - `sudo` (boolean, optional): Whether to use sudo privileges.
+
+### `file_write`
+- **Description:** Overwrites or appends content to a file. This is used for creating new files, adding content to existing files, or modifying them.
+- **Parameters:**
+    - `file` (string, required): The absolute path of the file to write to.
+    - `content` (string, required): The text content to write.
+    - `append` (boolean, optional): If true, appends the content to the end of the file.
+    - `leading_newline` (boolean, optional): Adds a newline character before the content.
+    - `trailing_newline` (boolean, optional): Adds a newline character after the content.
+    - `sudo` (boolean, optional): Whether to use sudo privileges.
+
+### `file_str_replace`
+- **Description:** Replaces a specified string within a file. This is useful for updating specific content or fixing errors in code.
+- **Parameters:**
+    - `file` (string, required): The absolute path of the file to perform the replacement on.
+    - `old_str` (string, required): The original string to be replaced.
+    - `new_str` (string, required): The new string to replace with.
+    - `sudo` (boolean, optional): Whether to use sudo privileges.
+
+### `file_find_in_content`
+- **Description:** Searches for matching text within the content of a file.
+- **Parameters:**
+    - `file` (string, required): The absolute path of the file to search within.
+    - `regex` (string, required): The regular expression pattern to match.
+    - `sudo` (boolean, optional): Whether to use sudo privileges.
+
+### `file_find_by_name`
+- **Description:** Finds files by a name pattern in a specified directory.
+- **Parameters:**
+    - `path` (string, required): The absolute path of the directory to search in.
+    - `glob` (string, required): A filename pattern using glob syntax wildcards.
+
+## Shell Tools
+These tools are for executing commands and managing processes in a shell environment.
+
+### `shell_exec`
+- **Description:** Executes a command in a specified shell session. This is used for running code, installing packages, or managing files.
+- **Parameters:**
+    - `id` (string, required): A unique identifier for the target shell session.
+    - `exec_dir` (string, required): The absolute path of the working directory for the command.
+    - `command` (string, required): The shell command to execute.
+
+### `shell_view`
+- **Description:** Views the content of a specified shell session. This is useful for checking command execution results or monitoring output.
+- **Parameters:**
+    - `id` (string, required): The unique identifier of the target shell session.
+
+### `shell_wait`
+- **Description:** Waits for a running process in a specified shell session to complete. This is used after running commands that require a longer execution time.
+- **Parameters:**
+    - `id` (string, required): The unique identifier of the target shell session.
+    - `seconds` (integer, optional): The duration to wait in seconds.
+
+### `shell_write_to_process`
+- **Description:** Writes input to a running process in a specified shell session. This is used for responding to interactive command prompts.
+- **Parameters:**
+    - `id` (string, required): The unique identifier of the target shell session.
+    - `input` (string, required): The content to write to the process.
+    - `press_enter` (boolean, required): Whether to press the Enter key after the input.
+
+### `shell_kill_process`
+- **Description:** Terminates a running process in a specified shell session. This is used for stopping long-running processes or handling frozen commands.
+- **Parameters:**
+    - `id` (string, required): The unique identifier of the target shell session.
+
+## Browser Tools
+These tools are for interacting with a web browser.
+
+### `browser_view`
+- **Description:** Views the content of the current browser page. This is useful for checking the latest state of a previously opened page.
+- **Parameters:** None.
+
+### `browser_navigate`
+- **Description:** Navigates the browser to a specified URL.
+- **Parameters:**
+    - `url` (string, required): The complete URL to visit, including the protocol prefix (e.g., `https://`).
+
+### `browser_restart`
+- **Description:** Restarts the browser and navigates to a specified URL. This is used when the browser state needs to be reset.
+- **Parameters:**
+    - `url` (string, required): The complete URL to visit after the restart.
+
+### `browser_click`
+- **Description:** Clicks on an element on the current browser page.
+- **Parameters:**
+    - `index` (integer, optional): The index number of the element to click.
+    - `coordinate_x` (number, optional): The x-coordinate of the click position.
+    - `coordinate_y` (number, optional): The y-coordinate of the click position.
+
+### `browser_input`
+- **Description:** Overwrites text in an editable element on the current browser page, such as an input field.
+- **Parameters:**
+    - `index` (integer, optional): The index number of the element.
+    - `coordinate_x` (number, optional): The x-coordinate of the element.
+    - `coordinate_y` (number, optional): The y-coordinate of the element.
+    - `text` (string, required): The text content to input.
+    - `press_enter` (boolean, required): Whether to press the Enter key after input.
+
+### `browser_move_mouse`
+- **Description:** Moves the cursor to a specified position on the current browser page.
+- **Parameters:**
+    - `coordinate_x` (number, required): The target x-coordinate for the cursor.
+    - `coordinate_y` (number, required): The target y-coordinate for the cursor.
+
+### `browser_press_key`
+- **Description:** Simulates a key press on the current browser page.
+- **Parameters:**
+    - `key` (string, required): The key to simulate (e.g., `Enter`, `Tab`, `ArrowUp`). It also supports key combinations (e.g., `Control+Enter`).
+
+### `browser_select_option`
+- **Description:** Selects an option from a dropdown list element on the current browser page.
+- **Parameters:**
+    - `index` (integer, required): The index number of the dropdown list element.
+    - `option` (integer, required): The 0-based index of the option to select.
+
+### `browser_scroll_up`
+- **Description:** Scrolls up the current browser page.
+- **Parameters:**
+    - `to_top` (boolean, optional): If true, scrolls directly to the top of the page instead of one viewport up.
+
+### `browser_scroll_down`
+- **Description:** Scrolls down the current browser page.
+- **Parameters:**
+    - `to_bottom` (boolean, optional): If true, scrolls directly to the bottom of the page instead of one viewport down.
+
+### `browser_console_exec`
+- **Description:** Executes JavaScript code in the browser console.
+- **Parameters:**
+    - `code` (string, required): The JavaScript code to execute.
+
+## Search Tools
+These tools are for performing searches.
+
+### `search_web`
+- **Description:** Performs a web search and returns a list of results.
+- **Parameters:**
+    - `query` (string, required): The search query.
+
+### `search_news`
+- **Description:** Performs a news search and returns a list of articles.
+- **Parameters:**
+    - `query` (string, required): The search query.
+
+## Deployment Tools
+These tools are for deploying applications and services.
+
+### `expose_port`
+- **Description:** Exposes a local port to the public internet for temporary access.
+- **Parameters:**
+    - `port` (integer, required): The local port number to expose.
+
+### `deploy_website`
+- **Description:** Deploys a static website to a public URL.
+- **Parameters:**
+    - `dist` (string, required): The absolute path to the directory containing the website files.
+
+### `deploy_app`
+- **Description:** Deploys a web application to a public URL.
+- **Parameters:**
+    - `app_type` (enum, required): The type of application to deploy (eg., `nodejs`).
+    - `dist` (string, required): The absolute path to the directory containing the application files.
+    - `start_command` (string, required): The command to start the application. 
