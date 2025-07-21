@@ -8,10 +8,34 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
+import Perplexity_2022_12_08 from "!raw-loader!./assets/perplexity/perplexity-2022_12_08.txt";
+import Perplexity_2024_03_11 from "!raw-loader!./assets/perplexity/perplexity-2024_03_11.txt";
+import Perplexity_2024_05_13 from "!raw-loader!./assets/perplexity/perplexity-2024_05_13.txt";
+import Perplexity_2024_06_07 from "!raw-loader!./assets/perplexity/perplexity-2024_06_07.txt";
+import Perplexity_2025_01_12 from "!raw-loader!./assets/perplexity/perplexity-2025_01_12.txt";
 import Prompt from "!raw-loader!./assets/perplexity/prompt.txt";
+import Perplexity_Voice_Assistant from "!raw-loader!./assets/perplexity/voice-assistant.txt";
 
 <Tabs queryString="primary">
+  <TabItem value="2022-12-08" label="2022-12-08">
+    <CodeBlock language="markdown">{Perplexity_2022_12_08}</CodeBlock>
+  </TabItem>
+  <TabItem value="2024-03-11" label="2024-03-11">
+    <CodeBlock language="markdown">{Perplexity_2024_03_11}</CodeBlock>
+  </TabItem>
+  <TabItem value="2024-05-13" label="2024-05-13">
+    <CodeBlock language="markdown">{Perplexity_2024_05_13}</CodeBlock>
+  </TabItem>
+  <TabItem value="2024-06-07" label="2024-06-07">
+    <CodeBlock language="markdown">{Perplexity_2024_06_07}</CodeBlock>
+  </TabItem>
+  <TabItem value="2025-01-12" label="2025-01-12">
+    <CodeBlock language="markdown">{Perplexity_2025_01_12}</CodeBlock>
+  </TabItem>
   <TabItem value="prompt" label="Prompt">
     <CodeBlock language="markdown">{Prompt}</CodeBlock>
+  </TabItem>
+  <TabItem value="voice-assistant" label="Voice Assistant">
+    <CodeBlock language="markdown">{Perplexity_Voice_Assistant}</CodeBlock>
   </TabItem>
 </Tabs>
