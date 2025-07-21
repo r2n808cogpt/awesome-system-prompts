@@ -12,30 +12,62 @@ import AgentTools from "!raw-loader!./assets/cursor/agent-tools-v1.txt";
 import AgentV1_0 from "!raw-loader!./assets/cursor/agent-v1_0.txt";
 import AgentV1_1 from "!raw-loader!./assets/cursor/agent-v1_1.txt";
 import AgentV1_2 from "!raw-loader!./assets/cursor/agent-v1_2.txt";
+import AvailableTools from "!raw-loader!./assets/cursor/available-tools.txt";
 import Chat from "!raw-loader!./assets/cursor/chat.txt";
+import CodeModification from "!raw-loader!./assets/cursor/code-modification.txt";
 import MemoryRating from "!raw-loader!./assets/cursor/memory-rating.txt";
+import MemorySystem from "!raw-loader!./assets/cursor/memory-system.txt";
 import Memory from "!raw-loader!./assets/cursor/memory.txt";
+import Personas from "!raw-loader!./assets/cursor/personas.txt";
+import Sonnet_3_5_2024_12_24 from "!raw-loader!./assets/cursor/sonnet-3_5-2024_12_24.txt";
+import Sonnet_3_7_2025_03_09 from "!raw-loader!./assets/cursor/sonnet-3_7-2025_03_09.txt";
+import Sonnet_3_7_Agent_Prompt from "!raw-loader!./assets/cursor/sonnet-3_7-agent-prompt.txt";
+import ToolUsage from "!raw-loader!./assets/cursor/tool-usage.txt";
 
 <Tabs queryString="primary">
   <TabItem value="agent" label="Agent">
     <CodeBlock language="json">{AgentTools}</CodeBlock>
   </TabItem>
   <TabItem value="agent-v1_0" label="Agent v1.0">
-    <CodeBlock language="markdown">{AgentV1_0}</CodeBlock>
+    <CodeBlock language="json">{AgentV1_0}</CodeBlock>
   </TabItem>
   <TabItem value="agent-v1_1" label="Agent v1.1">
-    <CodeBlock language="markdown">{AgentV1_1}</CodeBlock>
+    <CodeBlock language="json">{AgentV1_1}</CodeBlock>
   </TabItem>
   <TabItem value="agent-v1_2" label="Agent v1.2">
-    <CodeBlock language="markdown">{AgentV1_2}</CodeBlock>
+    <CodeBlock language="json">{AgentV1_2}</CodeBlock>
+  </TabItem>
+  <TabItem value="available-tools" label="Available Tools">
+    <CodeBlock language="json">{AvailableTools}</CodeBlock>
   </TabItem>
   <TabItem value="chat" label="Chat">
-    <CodeBlock language="markdown">{Chat}</CodeBlock>
+    <CodeBlock language="json">{Chat}</CodeBlock>
+  </TabItem>
+  <TabItem value="code-modification" label="Code Modification">
+    <CodeBlock language="json">{CodeModification}</CodeBlock>
   </TabItem>
   <TabItem value="memory-rating" label="Memory Rating">
-    <CodeBlock language="markdown">{MemoryRating}</CodeBlock>
+    <CodeBlock language="json">{MemoryRating}</CodeBlock>
+  </TabItem>
+  <TabItem value="memory-system" label="Memory System">
+    <CodeBlock language="json">{MemorySystem}</CodeBlock>
   </TabItem>
   <TabItem value="memory" label="Memory">
-    <CodeBlock language="markdown">{Memory}</CodeBlock>
+    <CodeBlock language="json">{Memory}</CodeBlock>
+  </TabItem>
+  <TabItem value="personas" label="Personas">
+    <CodeBlock language="json">{Personas}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_5-2024_12_24" label="Sonnet 3.5 (2024-12-24)">
+    <CodeBlock language="json">{Sonnet_3_5_2024_12_24}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_7-2025_03_09" label="Sonnet 3.7 (2025-03-09)">
+    <CodeBlock language="json">{Sonnet_3_7_2025_03_09}</CodeBlock>
+  </TabItem>
+  <TabItem value="sonnet-3_7-agent-prompt" label="Sonnet 3.7 Agent Prompt">
+    <CodeBlock language="json">{Sonnet_3_7_Agent_Prompt}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-usage" label="Tool Usage">
+    <CodeBlock language="json">{ToolUsage}</CodeBlock>
   </TabItem>
 </Tabs>

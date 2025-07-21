@@ -1,0 +1,44 @@
+## Search and Discovery
+
+- **`codebase_search`**: Finds snippets of code from the codebase most relevant to a semantic search query.
+  - `query` (string, required): The search query.
+  - `target_directories` (array of strings, optional): Glob patterns for directories to search over.
+- **`grep_search`**: Performs a fast, text-based regex search for exact pattern matches.
+  - `query` (string, required): The regex pattern to search for.
+  - `case_sensitive` (boolean, optional): Whether the search is case-sensitive.
+  - `include_pattern` (string, optional): Glob pattern for files to include (e.g., `*.ts`).
+  - `exclude_pattern` (string, optional): Glob pattern for files to exclude.
+- **`file_search`**: Performs a fast, fuzzy search for a file based on its path.
+  - `query` (string, required): The fuzzy filename to search for.
+- **`list_dir`**: Lists the contents of a directory.
+  - `relative_workspace_path` (string, required): The path to the directory relative to the workspace root.
+- **`web_search`**: Searches the web for real-time information.
+  - `search_term` (string, required): The term to look up on the web.
+
+## File System
+
+- **`read_file`**: Reads the contents of a file.
+  - `target_file` (string, required): The path of the file to read.
+  - `should_read_entire_file` (boolean, required): Whether to read the entire file.
+  - `start_line_one_indexed` (integer, required): The 1-indexed line to start reading from.
+  - `end_line_one_indexed_inclusive` (integer, required): The 1-indexed line to end reading at.
+- **`edit_file`**: Proposes an edit to an existing file.
+  - `target_file` (string, required): The path of the file to modify.
+  - `instructions` (string, required): A single-sentence description of the edit.
+  - `code_edit` (string, required): The precise lines of code to edit, using `// ... existing code ...` for unchanged parts.
+- **`delete_file`**: Deletes a file at a specified path.
+  - `target_file` (string, required): The relative path of the file to delete.
+- **`reapply`**: Calls a smarter model to reapply the last `edit_file` call if it failed.
+  - `target_file` (string, required): The path to the file to reapply the edit to.
+
+## Terminal
+
+- **`run_terminal_cmd`**: Proposes a command to run in the terminal.
+  - `command` (string, required): The terminal command to execute.
+  - `is_background` (boolean, required): Whether the command should run in the background.
+  - `require_user_approval` (boolean, required): Whether the user must approve the command before execution.
+
+## Other
+
+- **`diff_history`**: Retrieves the history of recent changes made to files in the workspace.
+  - No parameters.

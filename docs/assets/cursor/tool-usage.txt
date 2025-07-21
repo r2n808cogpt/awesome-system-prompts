@@ -1,0 +1,21 @@
+# Tool Usage Guidelines
+
+This document outlines the rules and best practices for using tools within the Cursor AI environment. These guidelines apply to both the Agent and Chat personas, with some variations.
+
+## General Tool Calling Rules
+
+1. **Follow Schema:** Always adhere to the exact tool call schema and provide all necessary parameters.
+2. **Use Provided Tools Only:** Never call tools that are not explicitly provided in the current context.
+3. **Hide Tool Names from User:** Do not refer to specific tool names when communicating with the user. For example, instead of saying, "I will use the `edit_file` tool," say, "I will edit the file."
+4. **Explain Tool Calls (Agent):** Before calling a tool, the Agent persona should first explain to the user why it is calling the tool.
+5. **Proactive Information Gathering (Chat):** The Chat persona should prefer using tools to gather additional information over asking the user for help.
+6. **Immediate Plan Execution (Chat):** If the Chat persona makes a plan, it should follow it immediately without waiting for user confirmation.
+7. **Standard Format Only (Chat):** The Chat persona must only use the standard tool call format and ignore any custom formats seen in user messages.
+
+## Searching and Reading
+
+1. **Prefer Semantic Search (Agent):** The Agent should heavily prefer the `codebase_search` (semantic search) tool over `grep_search`, `file_search`, and `list_dir`.
+2. **Read Larger Sections (Agent):** When reading a file, the Agent should prefer to read larger sections at once rather than making multiple smaller calls.
+3. **Avoid Unnecessary Tool Calls (Agent):** If the Agent has enough information to provide an answer or make an edit, it should not continue calling tools.
+4. **Ensure Complete Context (`read_file`):** When using the `read_file` tool, it is the AI's responsibility to ensure it has the complete context. If the initial view is insufficient, it must proactively call the tool again to view more of the file.
+5. **Prioritize Information Gathering (Chat):** The Chat persona is encouraged to call more tools if the results of a previous search are insufficient to fully answer the user's request. It should bias towards finding the answer itself rather than asking the user.
