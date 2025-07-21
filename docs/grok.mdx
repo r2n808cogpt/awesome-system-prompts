@@ -8,38 +8,82 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
-import Summary from "!raw-loader!./assets/grok/ask-grok-summarizer.j2";
-import DeepSearchSummary from "!raw-loader!./assets/grok/deepsearch-final-summarizer-prompt.j2";
-import Analize from "!raw-loader!./assets/grok/grok-analyze-button.j2";
-import Jailbreak from "!raw-loader!./assets/grok/grok-jailbreak-prompt.txt";
-import Grok2 from "!raw-loader!./assets/grok/grok2.txt";
-import Grok3Recent from "!raw-loader!./assets/grok/grok3-0330.j2";
-import Grok3DeepSearch from "!raw-loader!./assets/grok/grok3-with-deep-search.txt";
-import Grok3 from "!raw-loader!./assets/grok/grok3.txt";
+import Summarizer from "!raw-loader!./assets/grok/ask-grok-summarizer.j2";
+import DeepSearch from "!raw-loader!./assets/grok/deepsearch-final-summarizer-prompt.j2";
+import Grok2 from "!raw-loader!./assets/grok/grok-2.txt";
+import Grok3_0330 from "!raw-loader!./assets/grok/grok-3-0330.j2";
+import Grok3_2024_03_07 from "!raw-loader!./assets/grok/grok-3-2024_03_07.txt";
+import Grok3_2024_10_03 from "!raw-loader!./assets/grok/grok-3-2024_10_03.txt";
+import Grok3_2024_12_18 from "!raw-loader!./assets/grok/grok-3-2024_12_18.txt";
+import Grok3_2025_01_11 from "!raw-loader!./assets/grok/grok-3-2025_01_11.txt";
+import Grok3_with_Deep_Search from "!raw-loader!./assets/grok/grok-3-with-deep-search.txt";
+import Grok3 from "!raw-loader!./assets/grok/grok-3.txt";
+import Grok3_2025_02_23 from "!raw-loader!./assets/grok/grok-3_2025_02_23.txt";
+import Grok4 from "!raw-loader!./assets/grok/grok-4.txt";
+import GrokAnalyzeButton from "!raw-loader!./assets/grok/grok-analyze-button.j2";
+import GrokJailbreakPrompt from "!raw-loader!./assets/grok/grok-jailbreak-prompt.txt";
+import GrokPersonas from "!raw-loader!./assets/grok/grok-personas.txt";
+import Grok3_2025_04_23 from "!raw-loader!./assets/grok/grok3-2025_04_23.txt";
+import Grok3_2025_05_04 from "!raw-loader!./assets/grok/grok3-2025_05_04.txt";
+import Grok3_2025_05_09 from "!raw-loader!./assets/grok/grok3-2025_05_09.txt";
+import Grok3_2025_06_05 from "!raw-loader!./assets/grok/grok3-2025_06_05.txt";
 
 <Tabs queryString="primary">
-  <TabItem value="summary" label="Summary">
-    <CodeBlock language="markdown">{Summary}</CodeBlock>
+  <TabItem value="summarizer" label="Summarizer">
+    <CodeBlock language="j2">{Summarizer}</CodeBlock>
   </TabItem>
-  <TabItem value="deepsearch-summary" label="DeepSearch Summary">
-    <CodeBlock language="markdown">{DeepSearchSummary}</CodeBlock>
+  <TabItem value="deepsearch" label="Deep Search">
+    <CodeBlock language="j2">{DeepSearch}</CodeBlock>
   </TabItem>
-  <TabItem value="grok-analyze" label="Grok Analyze">
-    <CodeBlock language="markdown">{Analize}</CodeBlock>
-  </TabItem>
-  <TabItem value="grok-jailbreak" label="Grok Jailbreak">
-    <CodeBlock language="markdown">{Jailbreak}</CodeBlock>
-  </TabItem>
-  <TabItem value="grok2" label="Grok2">
+  <TabItem value="grok-2" label="Grok 2">
     <CodeBlock language="markdown">{Grok2}</CodeBlock>
   </TabItem>
-  <TabItem value="grok3" label="Grok3">
+  <TabItem value="grok-3-2025-02-23" label="Grok 3 (2025-02-23)">
+    <CodeBlock language="markdown">{Grok3_2025_02_23}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok-3-0330" label="Grok 3 (0330)">
+    <CodeBlock language="j2">{Grok3_0330}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok-3-2024-03-07" label="Grok 3 (2024-03-07)">
+    <CodeBlock language="markdown">{Grok3_2024_03_07}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok-3-2024-10-03" label="Grok 3 (2024-10-03)">
+    <CodeBlock language="markdown">{Grok3_2024_10_03}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok-3-2024-12-18" label="Grok 3 (2024-12-18)">
+    <CodeBlock language="markdown">{Grok3_2024_12_18}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok-3-2025-01-11" label="Grok 3 (2025-01-11)">
+    <CodeBlock language="markdown">{Grok3_2025_01_11}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok-3-with-deep-search" label="Grok 3 with Deep Search">
+    <CodeBlock language="markdown">{Grok3_with_Deep_Search}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok-3" label="Grok 3">
     <CodeBlock language="markdown">{Grok3}</CodeBlock>
   </TabItem>
-  <TabItem value="grok3-recent" label="Grok3 Recent">
-    <CodeBlock language="markdown">{Grok3Recent}</CodeBlock>
+  <TabItem value="grok-4" label="Grok 4">
+    <CodeBlock language="markdown">{Grok4}</CodeBlock>
   </TabItem>
-  <TabItem value="grok3-deepsearch" label="Grok3 DeepSearch">
-    <CodeBlock language="markdown">{Grok3DeepSearch}</CodeBlock>
+  <TabItem value="grok-analyze-button" label="Grok Analyze Button">
+    <CodeBlock language="j2">{GrokAnalyzeButton}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok-jailbreak-prompt" label="Grok Jailbreak Prompt">
+    <CodeBlock language="markdown">{GrokJailbreakPrompt}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok-personas" label="Grok Personas">
+    <CodeBlock language="markdown">{GrokPersonas}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok3-2025-04-23" label="Grok 3 (2025-04-23)">
+    <CodeBlock language="markdown">{Grok3_2025_04_23}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok3-2025-05-04" label="Grok 3 (2025-05-04)">
+    <CodeBlock language="markdown">{Grok3_2025_05_04}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok3-2025-05-09" label="Grok 3 (2025-05-09)">
+    <CodeBlock language="markdown">{Grok3_2025_05_09}</CodeBlock>
+  </TabItem>
+  <TabItem value="grok3-2025-06-05" label="Grok 3 (2025-06-05)">
+    <CodeBlock language="markdown">{Grok3_2025_06_05}</CodeBlock>
   </TabItem>
 </Tabs>
