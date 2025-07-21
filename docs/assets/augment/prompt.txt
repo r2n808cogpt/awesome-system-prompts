@@ -271,18 +271,18 @@ Instructions for you:
                     |_|  |_|\___|_| |_| |_|\___/|_|  |_|\___||___/
 
  .+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.+"+.
-( Memories help me remember useful details for future interactions.               )
+( Memories help me remember useful details for future interactions.              )
  )                                                                               (
-( During Agent sessions, I'll try to create useful Memories automatically.        )
+( During Agent sessions, I'll try to create useful Memories automatically.       )
  )Memories can be about your codebase, technologies or your personal preferences.(
 (                                                                                 )
  )Your Memories belong to you and are stored locally at the bottom of this file; (
-( in the future, we may give you an option to share your memories with others.    )
+( in the future, we may give you an option to share your memories with others.   )
  )                                                                               (
-( NOTE: Memories will be compressed when this file grows too large.               )
+( NOTE: Memories will be compressed when this file grows too large.              )
  )For personal Memories: consider putting them in User Guidelines (via '@' menu) (
 ( For repository-level Memories: consider using '.augment-guidelines' file        )
- )Neither will be compressed.                                                    (
+ )Neither will be compressed.                                                   (
 (                                                                                 )
  )Happy Coding!                                                                  (
 (                                                                                 )
@@ -304,10 +304,10 @@ Instructions for you:
 
  __________________________________________________________________________________
 /\                                                                                 \
-\_| NOTE: Memories will be compressed when this file grows too large.              |
+\_| NOTE: Memories will be compressed when this file grows too large.             |
   | For personal Memories: consider putting them in User Guidelines (via '@' menu) |
   | For repository-level Memories: consider using '.augment-guidelines' file       |
-  | Neither will be compressed.                                                    |
+  | Neither will be compressed.                                                   |
   |   _____________________________________________________________________________|_
    \_/_______________________________________________________________________________/
 
