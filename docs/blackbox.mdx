@@ -9,11 +9,15 @@ import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
 import Agent from "!raw-loader!./assets/blackbox/agent.txt";
+import Extract from "!raw-loader!./assets/blackbox/extract.py";
 import Prompt from "!raw-loader!./assets/blackbox/prompt.txt";
 
 <Tabs queryString="primary">
   <TabItem value="agent" label="Agent">
     <CodeBlock language="markdown">{Agent}</CodeBlock>
+  </TabItem>
+  <TabItem value="extract" label="Extract">
+    <CodeBlock language="py">{Extract}</CodeBlock>
   </TabItem>
   <TabItem value="prompt" label="Prompt">
     <CodeBlock language="markdown">{Prompt}</CodeBlock>
