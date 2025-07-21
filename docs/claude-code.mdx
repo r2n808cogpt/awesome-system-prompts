@@ -11,39 +11,51 @@ import Tabs from "@theme/Tabs";
 import AgentTool from "!raw-loader!./assets/claude-code/agent-tool.js";
 import BatchExecutionTool from "!raw-loader!./assets/claude-code/batch-execution-tool.js";
 import BugReportTool from "!raw-loader!./assets/claude-code/bug-report-tool.js";
+import ClaudeCode from "!raw-loader!./assets/claude-code/claude-code.js";
 import ClearTool from "!raw-loader!./assets/claude-code/clear-tool.js";
 import EditTool from "!raw-loader!./assets/claude-code/edit-tool.js";
 import LsTool from "!raw-loader!./assets/claude-code/ls-tool.js";
 import MemoryTool from "!raw-loader!./assets/claude-code/memory-tool.js";
+import PersonaModes from "!raw-loader!./assets/claude-code/persona-modes.txt";
 import ReadNotebook from "!raw-loader!./assets/claude-code/read-notebook.js";
+import SystemPrompt from "!raw-loader!./assets/claude-code/system-prompt-0_2_9.txt";
 import System from "!raw-loader!./assets/claude-code/system.js";
 
 <Tabs queryString="primary">
   <TabItem value="agent-tool" label="Agent Tool">
-    <CodeBlock language="markdown">{AgentTool}</CodeBlock>
+    <CodeBlock language="js">{AgentTool}</CodeBlock>
   </TabItem>
   <TabItem value="batch-execution-tool" label="Batch Execution Tool">
-    <CodeBlock language="markdown">{BatchExecutionTool}</CodeBlock>
+    <CodeBlock language="js">{BatchExecutionTool}</CodeBlock>
   </TabItem>
   <TabItem value="bug-report-tool" label="Bug Report Tool">
-    <CodeBlock language="markdown">{BugReportTool}</CodeBlock>
+    <CodeBlock language="js">{BugReportTool}</CodeBlock>
+  </TabItem>
+  <TabItem value="claude-code" label="Claude Code">
+    <CodeBlock language="js">{ClaudeCode}</CodeBlock>
   </TabItem>
   <TabItem value="clear-tool" label="Clear Tool">
-    <CodeBlock language="markdown">{ClearTool}</CodeBlock>
+    <CodeBlock language="js">{ClearTool}</CodeBlock>
   </TabItem>
   <TabItem value="edit-tool" label="Edit Tool">
-    <CodeBlock language="markdown">{EditTool}</CodeBlock>
+    <CodeBlock language="js">{EditTool}</CodeBlock>
   </TabItem>
   <TabItem value="ls-tool" label="LS Tool">
-    <CodeBlock language="markdown">{LsTool}</CodeBlock>
+    <CodeBlock language="js">{LsTool}</CodeBlock>
   </TabItem>
   <TabItem value="memory-tool" label="Memory Tool">
-    <CodeBlock language="markdown">{MemoryTool}</CodeBlock>
+    <CodeBlock language="js">{MemoryTool}</CodeBlock>
+  </TabItem>
+  <TabItem value="persona-modes" label="Persona Modes">
+    <CodeBlock language="markdown">{PersonaModes}</CodeBlock>
   </TabItem>
   <TabItem value="read-notebook" label="Read Notebook">
-    <CodeBlock language="markdown">{ReadNotebook}</CodeBlock>
+    <CodeBlock language="js">{ReadNotebook}</CodeBlock>
+  </TabItem>
+  <TabItem value="system-prompt" label="System Prompt">
+    <CodeBlock language="markdown">{SystemPrompt}</CodeBlock>
   </TabItem>
   <TabItem value="system" label="System">
-    <CodeBlock language="markdown">{System}</CodeBlock>
+    <CodeBlock language="js">{System}</CodeBlock>
   </TabItem>
 </Tabs>
