@@ -4,6 +4,15 @@ An opinionated list of awesome system prompts from various AI models.
 
 ## LLMs
 
+### [Aider](https://www.aider.ai)
+
+- [Architect Mode](docs/assets/aider/architect-mode.txt)
+- [Ask Mode](docs/assets/aider/ask-mode.txt)
+- [File Mode](docs/assets/aider/file-mode.txt)
+- [Patch Mode](docs/assets/aider/patch-mode.txt)
+- [System Prompt](docs/assets/aider/system-prompt.txt)
+- [Udiff Mode](docs/assets/aider/udiff-mode.txt)
+
 ### [Alan](https://alan.estsoft.ai/)
 
 - [Prompt](docs/assets/alan/prompt.txt)
@@ -74,14 +83,47 @@ An opinionated list of awesome system prompts from various AI models.
 - [LS Tool](docs/assets/claude-code/ls-tool.js)
 - [Memory Tool](docs/assets/claude-code/memory-tool.js)
 - [Persona Modes](docs/assets/claude-code/persona-modes.txt)
+- [Prompt 2025-07-06](docs/assets/claude-code/prompt-2025-07-06.txt)
 - [Read Notebook](docs/assets/claude-code/read-notebook.js)
 - [System Prompt 0.2.9](docs/assets/claude-code/system-prompt-0_2_9.txt)
 - [System](docs/assets/claude-code/system.js)
+- [Bash Tool](docs/assets/claude-code/tool-bash.txt)
+- [Edit Tool](docs/assets/claude-code/tool-edit.txt)
+- [Exit Plan Mode Tool](docs/assets/claude-code/tool-exit-plan-mode.txt)
+- [Glob Tool](docs/assets/claude-code/tool-glob.txt)
+- [Grep Tool](docs/assets/claude-code/tool-grep.txt)
+- [LS Tool](docs/assets/claude-code/tool-ls.txt)
+- [Multi Edit Tool](docs/assets/claude-code/tool-multi-edit.txt)
+- [Notebook Edit Tool](docs/assets/claude-code/tool-notebook-edit.txt)
+- [Notebook Read Tool](docs/assets/claude-code/tool-notebook-read.txt)
+- [Read Tool](docs/assets/claude-code/tool-read.txt)
+- [Task Tool](docs/assets/claude-code/tool-task.txt)
+- [Todo Read Tool](docs/assets/claude-code/tool-todo-read.txt)
+- [Todo Write Tool](docs/assets/claude-code/tool-todo-write.txt)
+- [Web Fetch Tool](docs/assets/claude-code/tool-web-fetch.txt)
+- [Web Search Tool](docs/assets/claude-code/tool-web-search.txt)
+- [Write Tool](docs/assets/claude-code/tool-write.txt)
 
 ### [Cline](https://docs.cline.bot)
 
 - [Prompt](docs/assets/cline/prompt.txt)
 - [System](docs/assets/cline/system.ts)
+- [Access MCP Resource Tool](docs/assets/cline/tool-access-mcp-resource.txt)
+- [Ask Question Tool](docs/assets/cline/tool-ask-question.txt)
+- [Attempt Completion Tool](docs/assets/cline/tool-attempt-completion.txt)
+- [Bash Tool](docs/assets/cline/tool-bash.txt)
+- [Browser Action Tool](docs/assets/cline/tool-browser-action.txt)
+- [Grep Tool](docs/assets/cline/tool-grep.txt)
+- [List Code Definition Names Tool](docs/assets/cline/tool-list-code-definition-names.txt)
+- [Load MCP Documentation Tool](docs/assets/cline/tool-load-mcp-documentation.txt)
+- [LS Tool](docs/assets/cline/tool-ls.txt)
+- [Multi Edit Tool](docs/assets/cline/tool-multi-edit.txt)
+- [New Task Tool](docs/assets/cline/tool-new-task.txt)
+- [Plan Mode Respond Tool](docs/assets/cline/tool-plan-mode-respond.txt)
+- [Read Tool](docs/assets/cline/tool-read.txt)
+- [Use MCP Tool](docs/assets/cline/tool-use-mcp-tool.txt)
+- [Web Fetch Tool](docs/assets/cline/tool-web-fetch.txt)
+- [Write Tool](docs/assets/cline/tool-write.txt)
 
 ### [Cluely](https://cluely.com)
 
@@ -121,6 +163,10 @@ An opinionated list of awesome system prompts from various AI models.
 - [Sonnet 3.7 (Agent Prompt)](docs/assets/cursor/sonnet-3_7-agent-prompt.txt)
 - [Tool Usage](docs/assets/cursor/tool-usage.txt)
 
+### [Databricks](https://www.databricks.com)
+
+- [Prompt](docs/assets/databricks/prompt.txt)
+
 ### [Devin](https://www.cognition-labs.com/introducing-devin)
 
 - [Available Commands](docs/assets/devin/available-commands.txt)
@@ -142,8 +188,20 @@ An opinionated list of awesome system prompts from various AI models.
 - [Gemini 2.5 Pro Webapp](docs/assets/gemini/gemini-2.5-pro-webapp.txt)
 - [Gemini Diffusion](docs/assets/gemini/gemini-diffusion.txt)
 - [Google Gemini 1.5 (2024-04-11)](docs/assets/gemini/google-gemini-1_5-2024_04_11.txt)
+- [Google Gemini CLI (2024-07-03)](docs/assets/gemini/google-gemini-cli-2024-07-03.txt)
 - [Google Gemini CLI (2025-06-26)](docs/assets/gemini/google-gemini-cli-2025_06_26.txt)
 - [Google Stitch (2025-07-09)](docs/assets/gemini/google-stitch-2025_07_09.txt)
+- [Edit Tool](docs/assets/gemini/tool-edit.txt)
+- [Glob Tool](docs/assets/gemini/tool-glob.txt)
+- [Grep Tool](docs/assets/gemini/tool-grep.txt)
+- [LS Tool](docs/assets/gemini/tool-ls.txt)
+- [Memory Tool](docs/assets/gemini/tool-memory.txt)
+- [Read File Tool](docs/assets/gemini/tool-read-file.txt)
+- [Read Many Files Tool](docs/assets/gemini/tool-read-many-files-tool.txt)
+- [Shell Tool](docs/assets/gemini/tool-shell.txt)
+- [Web Fetch Tool](docs/assets/gemini/tool-web-fetch.txt)
+- [Web Search Tool](docs/assets/gemini/tool-web-search.txt)
+- [Write File Tool](docs/assets/gemini/tool-write-file.txt)
 
 ### [ChatGLM](https://chatglm.cn)
 
@@ -178,6 +236,11 @@ An opinionated list of awesome system prompts from various AI models.
 - [Grok3 2025-05-04](docs/assets/grok/grok3-2025_05_04.txt)
 - [Grok3 2025-05-09](docs/assets/grok/grok3-2025_05_09.txt)
 - [Grok3 2025-06-05](docs/assets/grok/grok3-2025_06_05.txt)
+
+### [Hume](https://hume.ai)
+
+- [Prompt 2024-04-05](docs/assets/hume/prompt-2024-04-05.txt)
+- [Prompt 2024-05-05](docs/assets/hume/prompt-2024-05-05.txt)
 
 ### [Junie](https://junie.co)
 
@@ -222,6 +285,10 @@ An opinionated list of awesome system prompts from various AI models.
 ### [Moonshot KIMI](https://www.kimi.com)
 
 - [KIMI 2024-11-06](docs/assets/moonshot/kimi-2024_11_06.txt)
+
+### [MultiOn](https://multion.ai)
+
+- [Prompt](docs/assets/multion/prompt.txt)
 
 ### [MyAI](https://my.ai.se)
 
@@ -306,6 +373,11 @@ An opinionated list of awesome system prompts from various AI models.
 - [Decision Making](docs/assets/orchids/decision-making.txt)
 - [Prompt](docs/assets/orchids/prompt.txt)
 
+### [Parahelp](https://parahelp.com)
+
+- [Manager Tool](docs/assets/parahelp/manager.txt)
+- [Planning Tool](docs/assets/parahelp/planning.txt)
+
 ### [Perplexity](https://www.perplexity.ai)
 
 - [Perplexity 2022-12-08](docs/assets/perplexity/perplexity-2022_12_08.txt)
@@ -339,7 +411,20 @@ An opinionated list of awesome system prompts from various AI models.
 
 ### [Roo-Code](https://www.roo.com)
 
+- [Prompt 2025-07-06](docs/assets/roo-code/prompt-2025-07-06.txt)
 - [Prompt](docs/assets/roo-code/prompt.txt)
+- [Ask Followup Question Tool](docs/assets/roo-code/tool-ask-followup-question.txt)
+- [Attempt Completion Tool](docs/assets/roo-code/tool-attempt-completion.txt)
+- [Browser Action Tool](docs/assets/roo-code/tool-browser-action.txt)
+- [Execute Command Tool](docs/assets/roo-code/tool-execute-command.txt)
+- [Insert Content Tool](docs/assets/roo-code/tool-insert-content.txt)
+- [List Files Tool](docs/assets/roo-code/tool-list-files.txt)
+- [New Task Tool](docs/assets/roo-code/tool-new-task.txt)
+- [Read File Tool](docs/assets/roo-code/tool-read-file.txt)
+- [Search and Replace Tool](docs/assets/roo-code/tool-search-and-replace.txt)
+- [Search Files Tool](docs/assets/roo-code/tool-search-files.txt)
+- [Switch Mode Tool](docs/assets/roo-code/tool-switch-mode.txt)
+- [Write to File Tool](docs/assets/roo-code/tool-write-to-file.txt)
 
 ### [Same-Dev](https://www.same.dev)
 
@@ -412,3 +497,22 @@ An opinionated list of awesome system prompts from various AI models.
 - [Playground Action](docs/assets/xcode/playground-action.txt)
 - [Preview Action](docs/assets/xcode/preview-action.txt)
 - [System Action](docs/assets/xcode/system.txt)
+
+### [Zed](https://zed.dev)
+
+- [Prompt](docs/assets/zed/prompt.txt)
+- [Copy Path Tool](docs/assets/zed/tool-copy-path.txt)
+- [Create Directory Tool](docs/assets/zed/tool-create-directory.txt)
+- [Delete Path Tool](docs/assets/zed/tool-delete-path.txt)
+- [Diagnostics Tool](docs/assets/zed/tool-diagnostics.txt)
+- [Edit File Tool](docs/assets/zed/tool-edit-file.txt)
+- [Fetch Tool](docs/assets/zed/tool-fetch.txt)
+- [Find Path Tool](docs/assets/zed/tool-find-path.txt)
+- [Grep Tool](docs/assets/zed/tool-grep.txt)
+- [List Directory Tool](docs/assets/zed/tool-list-directory.txt)
+- [Move Path Tool](docs/assets/zed/tool-move-path.txt)
+- [Now Tool](docs/assets/zed/tool-now.txt)
+- [Read File Tool](docs/assets/zed/tool-read-file.txt)
+- [Terminal Tool](docs/assets/zed/tool-terminal.txt)
+- [Thinking Tool](docs/assets/zed/tool-thinking.txt)
+- [Web Search Tool](docs/assets/zed/tool-web-search.txt)
