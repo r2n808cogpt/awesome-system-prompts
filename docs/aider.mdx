@@ -1,0 +1,37 @@
+---
+title: Aider
+description: Aider Prompt
+hide_table_of_contents: true
+---
+
+import CodeBlock from "@theme/CodeBlock";
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+import ArchitectMode from "!raw-loader!./assets/aider/architect-mode.txt";
+import AskMode from "!raw-loader!./assets/aider/ask-mode.txt";
+import FileMode from "!raw-loader!./assets/aider/file-mode.txt";
+import PatchMode from "!raw-loader!./assets/aider/patch-mode.txt";
+import SystemPrompt from "!raw-loader!./assets/aider/system-prompt.txt";
+import UdiffMode from "!raw-loader!./assets/aider/udiff-mode.txt";
+
+<Tabs queryString="primary">
+  <TabItem value="architect" label="Architect">
+    <CodeBlock language="markdown">{ArchitectMode}</CodeBlock>
+  </TabItem>
+  <TabItem value="ask" label="Ask">
+    <CodeBlock language="markdown">{AskMode}</CodeBlock>
+  </TabItem>
+  <TabItem value="file" label="File">
+    <CodeBlock language="markdown">{FileMode}</CodeBlock>
+  </TabItem>
+  <TabItem value="patch" label="Patch">
+    <CodeBlock language="markdown">{PatchMode}</CodeBlock>
+  </TabItem>
+  <TabItem value="system" label="System">
+    <CodeBlock language="markdown">{SystemPrompt}</CodeBlock>
+  </TabItem>
+  <TabItem value="udiff" label="Udiff">
+    <CodeBlock language="markdown">{UdiffMode}</CodeBlock>
+  </TabItem>
+</Tabs>
