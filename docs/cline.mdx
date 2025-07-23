@@ -11,11 +11,82 @@ import Tabs from "@theme/Tabs";
 import Prompt from "!raw-loader!./assets/cline/prompt.txt";
 import System from "!raw-loader!./assets/cline/system.ts";
 
+import ToolAccessMcpResource from "!raw-loader!./assets/cline/tool-access-mcp-resource.txt";
+import ToolAskQuestion from "!raw-loader!./assets/cline/tool-ask-question.txt";
+import ToolAttemptCompletion from "!raw-loader!./assets/cline/tool-attempt-completion.txt";
+import ToolBash from "!raw-loader!./assets/cline/tool-bash.txt";
+import ToolBrowserAction from "!raw-loader!./assets/cline/tool-browser-action.txt";
+import ToolGrep from "!raw-loader!./assets/cline/tool-grep.txt";
+import ToolListCodeDefinitionNames from "!raw-loader!./assets/cline/tool-list-code-definition-names.txt";
+import ToolLoadMcpDocumentation from "!raw-loader!./assets/cline/tool-load-mcp-documentation.txt";
+import ToolLs from "!raw-loader!./assets/cline/tool-ls.txt";
+import ToolMultiEdit from "!raw-loader!./assets/cline/tool-multi-edit.txt";
+import ToolNewTask from "!raw-loader!./assets/cline/tool-new-task.txt";
+import ToolPlanModeRespond from "!raw-loader!./assets/cline/tool-plan-mode-respond.txt";
+import ToolRead from "!raw-loader!./assets/cline/tool-read.txt";
+import ToolUseMcpTool from "!raw-loader!./assets/cline/tool-use-mcp-tool.txt";
+import ToolWebFetch from "!raw-loader!./assets/cline/tool-web-fetch.txt";
+import ToolWrite from "!raw-loader!./assets/cline/tool-write.txt";
+
 <Tabs queryString="primary">
   <TabItem value="prompt" label="Prompt">
     <CodeBlock language="markdown">{Prompt}</CodeBlock>
   </TabItem>
   <TabItem value="system" label="System">
     <CodeBlock language="markdown">{System}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-access-mcp-resource" label="Tool: Access MCP Resource">
+    <CodeBlock language="markdown">{ToolAccessMcpResource}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-ask-question" label="Tool: Ask Question">
+    <CodeBlock language="markdown">{ToolAskQuestion}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-attempt-completion" label="Tool: Attempt Completion">
+    <CodeBlock language="markdown">{ToolAttemptCompletion}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-bash" label="Tool: Bash">
+    <CodeBlock language="markdown">{ToolBash}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-browser-action" label="Tool: Browser Action">
+    <CodeBlock language="markdown">{ToolBrowserAction}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-grep" label="Tool: Grep">
+    <CodeBlock language="markdown">{ToolGrep}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="tool-list-code-definition-names"
+    label="Tool: List Code Definition Names"
+  >
+    <CodeBlock language="markdown">{ToolListCodeDefinitionNames}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="tool-load-mcp-documentation"
+    label="Tool: Load MCP Documentation"
+  >
+    <CodeBlock language="markdown">{ToolLoadMcpDocumentation}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-ls" label="Tool: Ls">
+    <CodeBlock language="markdown">{ToolLs}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-multi-edit" label="Tool: Multi Edit">
+    <CodeBlock language="markdown">{ToolMultiEdit}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-new-task" label="Tool: New Task">
+    <CodeBlock language="markdown">{ToolNewTask}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-plan-mode-respond" label="Tool: Plan Mode Respond">
+    <CodeBlock language="markdown">{ToolPlanModeRespond}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-read" label="Tool: Read">
+    <CodeBlock language="markdown">{ToolRead}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-use-mcp-tool" label="Tool: Use MCP Tool">
+    <CodeBlock language="markdown">{ToolUseMcpTool}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-web-fetch" label="Tool: Web Fetch">
+    <CodeBlock language="markdown">{ToolWebFetch}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-write" label="Tool: Write">
+    <CodeBlock language="markdown">{ToolWrite}</CodeBlock>
   </TabItem>
 </Tabs>
