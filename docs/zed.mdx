@@ -1,0 +1,77 @@
+---
+title: Zed Code
+description: Zed AI Assistant System Prompt
+hide_table_of_contents: true
+---
+
+import CodeBlock from "@theme/CodeBlock";
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+import Prompt from "!raw-loader!./assets/zed/prompt.txt";
+import Tool_Copy_Path from "!raw-loader!./assets/zed/tool-copy-path.txt";
+import Tool_Create_Directory from "!raw-loader!./assets/zed/tool-create-directory.txt";
+import Tool_Delete_Path from "!raw-loader!./assets/zed/tool-delete-path.txt";
+import Tool_Diagnostics from "!raw-loader!./assets/zed/tool-diagnostics.txt";
+import Tool_Edit_File from "!raw-loader!./assets/zed/tool-edit-file.txt";
+import Tool_Fetch from "!raw-loader!./assets/zed/tool-fetch.txt";
+import Tool_Find_Path from "!raw-loader!./assets/zed/tool-find-path.txt";
+import Tool_Grep from "!raw-loader!./assets/zed/tool-grep.txt";
+import Tool_List_Directory from "!raw-loader!./assets/zed/tool-list-directory.txt";
+import Tool_Move_Path from "!raw-loader!./assets/zed/tool-move-path.txt";
+import Tool_Now from "!raw-loader!./assets/zed/tool-now.txt";
+import Tool_Read_File from "!raw-loader!./assets/zed/tool-read-file.txt";
+import Tool_Terminal from "!raw-loader!./assets/zed/tool-terminal.txt";
+import Tool_Thinking from "!raw-loader!./assets/zed/tool-thinking.txt";
+import Tool_Web_Search from "!raw-loader!./assets/zed/tool-web-search.txt";
+
+<Tabs queryString="primary">
+  <TabItem value="prompt" label="Prompt">
+    <CodeBlock language="markdown">{Prompt}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-copy-path" label="Tool Copy Path">
+    <CodeBlock language="markdown">{Tool_Copy_Path}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-create-directory" label="Tool Create Directory">
+    <CodeBlock language="markdown">{Tool_Create_Directory}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-delete-path" label="Tool Delete Path">
+    <CodeBlock language="markdown">{Tool_Delete_Path}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-diagnostics" label="Tool Diagnostics">
+    <CodeBlock language="markdown">{Tool_Diagnostics}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-edit-file" label="Tool Edit File">
+    <CodeBlock language="markdown">{Tool_Edit_File}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-fetch" label="Tool Fetch">
+    <CodeBlock language="markdown">{Tool_Fetch}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-find-path" label="Tool Find Path">
+    <CodeBlock language="markdown">{Tool_Find_Path}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-grep" label="Tool Grep">
+    <CodeBlock language="markdown">{Tool_Grep}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-list-directory" label="Tool List Directory">
+    <CodeBlock language="markdown">{Tool_List_Directory}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-move-path" label="Tool Move Path">
+    <CodeBlock language="markdown">{Tool_Move_Path}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-now" label="Tool Now">
+    <CodeBlock language="markdown">{Tool_Now}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-read-file" label="Tool Read File">
+    <CodeBlock language="markdown">{Tool_Read_File}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-terminal" label="Tool Terminal">
+    <CodeBlock language="markdown">{Tool_Terminal}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-thinking" label="Tool Thinking">
+    <CodeBlock language="markdown">{Tool_Thinking}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-web-search" label="Tool Web Search">
+    <CodeBlock language="markdown">{Tool_Web_Search}</CodeBlock>
+  </TabItem>
+</Tabs>
