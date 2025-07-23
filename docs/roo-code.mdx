@@ -8,10 +8,65 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
-import Prompt from "!!raw-loader!./assets/roo-code/prompt.txt";
+import Prompt_2025_07_06 from "!raw-loader!./assets/roo-code/prompt-2025-07-06.txt";
+import Prompt from "!raw-loader!./assets/roo-code/prompt.txt";
+import Tool_Ask_Followup_Question from "!raw-loader!./assets/roo-code/tool-ask-followup-question.txt";
+import Tool_Attempt_Completion from "!raw-loader!./assets/roo-code/tool-attempt-completion.txt";
+import Tool_Browser_Action from "!raw-loader!./assets/roo-code/tool-browser-action.txt";
+import Tool_Execute_Command from "!raw-loader!./assets/roo-code/tool-execute-command.txt";
+import Tool_Insert_Content from "!raw-loader!./assets/roo-code/tool-insert-content.txt";
+import Tool_List_Files from "!raw-loader!./assets/roo-code/tool-list-files.txt";
+import Tool_New_Task from "!raw-loader!./assets/roo-code/tool-new-task.txt";
+import Tool_Read_File from "!raw-loader!./assets/roo-code/tool-read-file.txt";
+import Tool_Search_And_Replace from "!raw-loader!./assets/roo-code/tool-search-and-replace.txt";
+import Tool_Search_Files from "!raw-loader!./assets/roo-code/tool-search-files.txt";
+import Tool_Switch_Mode from "!raw-loader!./assets/roo-code/tool-switch-mode.txt";
+import Tool_Write_To_File from "!raw-loader!./assets/roo-code/tool-write-to-file.txt";
 
 <Tabs queryString="primary">
+  <TabItem value="prompt-2025-07-06" label="Prompt 2025-07-06" default>
+    <CodeBlock language="markdown">{Prompt_2025_07_06}</CodeBlock>
+  </TabItem>
   <TabItem value="prompt" label="Prompt">
     <CodeBlock language="markdown">{Prompt}</CodeBlock>
+  </TabItem>
+  <TabItem
+    value="tool-ask-followup-question"
+    label="Tool: Ask Followup Question"
+  >
+    <CodeBlock language="markdown">{Tool_Ask_Followup_Question}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-attempt-completion" label="Tool: Attempt Completion">
+    <CodeBlock language="markdown">{Tool_Attempt_Completion}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-browser-action" label="Tool: Browser Action">
+    <CodeBlock language="markdown">{Tool_Browser_Action}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-execute-command" label="Tool: Execute Command">
+    <CodeBlock language="markdown">{Tool_Execute_Command}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-insert-content" label="Tool: Insert Content">
+    <CodeBlock language="markdown">{Tool_Insert_Content}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-list-files" label="Tool: List Files">
+    <CodeBlock language="markdown">{Tool_List_Files}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-new-task" label="Tool: New Task">
+    <CodeBlock language="markdown">{Tool_New_Task}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-read-file" label="Tool: Read File">
+    <CodeBlock language="markdown">{Tool_Read_File}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-search-and-replace" label="Tool: Search and Replace">
+    <CodeBlock language="markdown">{Tool_Search_And_Replace}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-search-files" label="Tool: Search Files">
+    <CodeBlock language="markdown">{Tool_Search_Files}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-switch-mode" label="Tool: Switch Mode">
+    <CodeBlock language="markdown">{Tool_Switch_Mode}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-write-to-file" label="Tool: Write to File">
+    <CodeBlock language="markdown">{Tool_Write_To_File}</CodeBlock>
   </TabItem>
 </Tabs>
