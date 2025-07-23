@@ -12,8 +12,20 @@ import Gemini_2_0_Flash_Webapp from "!raw-loader!./assets/gemini/gemini-2.0-flas
 import Gemini_2_5_Pro_Webapp from "!raw-loader!./assets/gemini/gemini-2.5-pro-webapp.txt";
 import Gemini_Diffusion from "!raw-loader!./assets/gemini/gemini-diffusion.txt";
 import Google_Gemini_1_5_2024_04_11 from "!raw-loader!./assets/gemini/google-gemini-1_5-2024_04_11.txt";
-import Google_Gemini_CLI_2025_06_26 from "!raw-loader!./assets/gemini/google-gemini-cli-2025_06_26.txt";
+import Google_Gemini_CLI_2024_07_03 from "!raw-loader!./assets/gemini/google-gemini-cli-2024-07-03.txt";
 import Google_Stitch_2025_07_09 from "!raw-loader!./assets/gemini/google-stitch-2025_07_09.txt";
+
+import ToolEdit from "!raw-loader!./assets/gemini/tool-edit.txt";
+import ToolGlob from "!raw-loader!./assets/gemini/tool-glob.txt";
+import ToolGrep from "!raw-loader!./assets/gemini/tool-grep.txt";
+import ToolLs from "!raw-loader!./assets/gemini/tool-ls.txt";
+import ToolMemory from "!raw-loader!./assets/gemini/tool-memory.txt";
+import ToolReadFile from "!raw-loader!./assets/gemini/tool-read-file.txt";
+import ToolReadManyFiles from "!raw-loader!./assets/gemini/tool-read-many-files-tool.txt";
+import ToolShell from "!raw-loader!./assets/gemini/tool-shell.txt";
+import ToolWebFetch from "!raw-loader!./assets/gemini/tool-web-fetch.txt";
+import ToolWebSearch from "!raw-loader!./assets/gemini/tool-web-search.txt";
+import ToolWriteFile from "!raw-loader!./assets/gemini/tool-write-file.txt";
 
 <Tabs queryString="primary">
   <TabItem value="gemini-2.0-flash-webapp" label="Gemini 2.0 Flash Webapp">
@@ -32,12 +44,45 @@ import Google_Stitch_2025_07_09 from "!raw-loader!./assets/gemini/google-stitch-
     <CodeBlock language="markdown">{Google_Gemini_1_5_2024_04_11}</CodeBlock>
   </TabItem>
   <TabItem
-    value="google-gemini-cli-2025_06_26"
-    label="Google Gemini CLI (2025-06-26)"
+    value="google-gemini-cli-2024-07-03"
+    label="Google Gemini CLI (2024-07-03)"
   >
-    <CodeBlock language="markdown">{Google_Gemini_CLI_2025_06_26}</CodeBlock>
+    <CodeBlock language="markdown">{Google_Gemini_CLI_2024_07_03}</CodeBlock>
   </TabItem>
   <TabItem value="google-stitch-2025_07_09" label="Google Stitch (2025-07-09)">
     <CodeBlock language="markdown">{Google_Stitch_2025_07_09}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-edit" label="Tool Edit">
+    <CodeBlock language="markdown">{ToolEdit}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-glob" label="Tool Glob">
+    <CodeBlock language="markdown">{ToolGlob}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-grep" label="Tool Grep">
+    <CodeBlock language="markdown">{ToolGrep}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-ls" label="Tool Ls">
+    <CodeBlock language="markdown">{ToolLs}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-memory" label="Tool Memory">
+    <CodeBlock language="markdown">{ToolMemory}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-read-file" label="Tool Read File">
+    <CodeBlock language="markdown">{ToolReadFile}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-read-many-files-tool" label="Tool Read Many Files">
+    <CodeBlock language="markdown">{ToolReadManyFiles}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-shell" label="Tool Shell">
+    <CodeBlock language="markdown">{ToolShell}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-web-fetch" label="Tool Web Fetch">
+    <CodeBlock language="markdown">{ToolWebFetch}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-web-search" label="Tool Web Search">
+    <CodeBlock language="markdown">{ToolWebSearch}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-write-file" label="Tool Write File">
+    <CodeBlock language="markdown">{ToolWriteFile}</CodeBlock>
   </TabItem>
 </Tabs>
