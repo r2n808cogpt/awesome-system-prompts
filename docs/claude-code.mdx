@@ -17,9 +17,27 @@ import EditTool from "!raw-loader!./assets/claude-code/edit-tool.js";
 import LsTool from "!raw-loader!./assets/claude-code/ls-tool.js";
 import MemoryTool from "!raw-loader!./assets/claude-code/memory-tool.js";
 import PersonaModes from "!raw-loader!./assets/claude-code/persona-modes.txt";
+import Prompt_20250706 from "!raw-loader!./assets/claude-code/prompt-2025-07-06.txt";
 import ReadNotebook from "!raw-loader!./assets/claude-code/read-notebook.js";
 import SystemPrompt from "!raw-loader!./assets/claude-code/system-prompt-0_2_9.txt";
 import System from "!raw-loader!./assets/claude-code/system.js";
+
+import ToolBash from "!raw-loader!./assets/claude-code/tool-bash.txt";
+import ToolEdit from "!raw-loader!./assets/claude-code/tool-edit.txt";
+import ToolExitPlanMode from "!raw-loader!./assets/claude-code/tool-exit-plan-mode.txt";
+import ToolGlob from "!raw-loader!./assets/claude-code/tool-glob.txt";
+import ToolGrep from "!raw-loader!./assets/claude-code/tool-grep.txt";
+import ToolLs from "!raw-loader!./assets/claude-code/tool-ls.txt";
+import ToolMultiEdit from "!raw-loader!./assets/claude-code/tool-multi-edit.txt";
+import ToolNotebookEdit from "!raw-loader!./assets/claude-code/tool-notebook-edit.txt";
+import ToolNotebookRead from "!raw-loader!./assets/claude-code/tool-notebook-read.txt";
+import ToolRead from "!raw-loader!./assets/claude-code/tool-read.txt";
+import ToolTask from "!raw-loader!./assets/claude-code/tool-task.txt";
+import ToolTodoRead from "!raw-loader!./assets/claude-code/tool-todo-read.txt";
+import ToolTodoWrite from "!raw-loader!./assets/claude-code/tool-todo-write.txt";
+import ToolWebFetch from "!raw-loader!./assets/claude-code/tool-web-fetch.txt";
+import ToolWebSearch from "!raw-loader!./assets/claude-code/tool-web-search.txt";
+import ToolWrite from "!raw-loader!./assets/claude-code/tool-write.txt";
 
 <Tabs queryString="primary">
   <TabItem value="agent-tool" label="Agent Tool">
@@ -49,6 +67,9 @@ import System from "!raw-loader!./assets/claude-code/system.js";
   <TabItem value="persona-modes" label="Persona Modes">
     <CodeBlock language="markdown">{PersonaModes}</CodeBlock>
   </TabItem>
+  <TabItem value="prompt-2025-07-06" label="Prompt 2025-07-06">
+    <CodeBlock language="markdown">{Prompt_20250706}</CodeBlock>
+  </TabItem>
   <TabItem value="read-notebook" label="Read Notebook">
     <CodeBlock language="js">{ReadNotebook}</CodeBlock>
   </TabItem>
@@ -57,5 +78,53 @@ import System from "!raw-loader!./assets/claude-code/system.js";
   </TabItem>
   <TabItem value="system" label="System">
     <CodeBlock language="js">{System}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-bash" label="Tool Bash">
+    <CodeBlock language="markdown">{ToolBash}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-edit" label="Tool Edit">
+    <CodeBlock language="markdown">{ToolEdit}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-exit-plan-mode" label="Tool Exit Plan Mode">
+    <CodeBlock language="markdown">{ToolExitPlanMode}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-glob" label="Tool Glob">
+    <CodeBlock language="markdown">{ToolGlob}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-grep" label="Tool Grep">
+    <CodeBlock language="markdown">{ToolGrep}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-ls" label="Tool LS">
+    <CodeBlock language="markdown">{ToolLs}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-multi-edit" label="Tool Multi Edit">
+    <CodeBlock language="markdown">{ToolMultiEdit}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-notebook-edit" label="Tool Notebook Edit">
+    <CodeBlock language="markdown">{ToolNotebookEdit}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-notebook-read" label="Tool Notebook Read">
+    <CodeBlock language="markdown">{ToolNotebookRead}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-read" label="Tool Read">
+    <CodeBlock language="markdown">{ToolRead}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-task" label="Tool Task">
+    <CodeBlock language="markdown">{ToolTask}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-todo-read" label="Tool Todo Read">
+    <CodeBlock language="markdown">{ToolTodoRead}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-todo-write" label="Tool Todo Write">
+    <CodeBlock language="markdown">{ToolTodoWrite}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-web-fetch" label="Tool Web Fetch">
+    <CodeBlock language="markdown">{ToolWebFetch}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-web-search" label="Tool Web Search">
+    <CodeBlock language="markdown">{ToolWebSearch}</CodeBlock>
+  </TabItem>
+  <TabItem value="tool-write" label="Tool Write">
+    <CodeBlock language="markdown">{ToolWrite}</CodeBlock>
   </TabItem>
 </Tabs>
