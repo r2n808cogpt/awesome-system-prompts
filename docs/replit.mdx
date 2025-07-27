@@ -8,10 +8,14 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
-import Prompt from "!!raw-loader!./assets/replit/prompt.txt";
-import Tools from "!!raw-loader!./assets/replit/tools.json";
+import Prompt2025 from "!raw-loader!./assets/replit/prompt-2025.txt";
+import Prompt from "!raw-loader!./assets/replit/prompt.txt";
+import Tools from "!raw-loader!./assets/replit/tools.txt";
 
 <Tabs queryString="primary">
+  <TabItem value="prompt-2025" label="Prompt 2025">
+    <CodeBlock language="markdown">{Prompt2025}</CodeBlock>
+  </TabItem>
   <TabItem value="prompt" label="Prompt">
     <CodeBlock language="markdown">{Prompt}</CodeBlock>
   </TabItem>
