@@ -8,6 +8,8 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
+import AgentPrompt from "!raw-loader!./assets/lovable/agent-prompt.txt";
+import AgentTools from "!raw-loader!./assets/lovable/agent-tools.txt";
 import CorePrinciples from "!raw-loader!./assets/lovable/core-principles.txt";
 import DrivenDevelopment from "!raw-loader!./assets/lovable/driven-development.txt";
 import FileOperations from "!raw-loader!./assets/lovable/file-operations.txt";
@@ -20,6 +22,12 @@ import ResponseStructure from "!raw-loader!./assets/lovable/response-structure.t
 import SpecialInstructions from "!raw-loader!./assets/lovable/special-instructions.txt";
 
 <Tabs queryString="primary">
+  <TabItem value="agent-prompt" label="Agent Prompt">
+    <CodeBlock language="markdown">{AgentPrompt}</CodeBlock>
+  </TabItem>
+  <TabItem value="agent-tools" label="Agent Tools">
+    <CodeBlock language="json">{AgentTools}</CodeBlock>
+  </TabItem>
   <TabItem value="core-principles" label="Core Principles">
     <CodeBlock language="markdown">{CorePrinciples}</CodeBlock>
   </TabItem>
