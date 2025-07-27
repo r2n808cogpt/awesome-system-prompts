@@ -252,6 +252,8 @@ An opinionated list of awesome system prompts from various AI models.
 
 ### [Lovable](https://lovable.ai)
 
+- [Agent Prompt](docs/assets/lovable/agent-prompt.txt)
+- [Agent Tools](docs/assets/lovable/agent-tools.txt)
 - [Core Principles](docs/assets/lovable/core-principles.txt)
 - [Driven Development](docs/assets/lovable/driven-development.txt)
 - [File Operations](docs/assets/lovable/file-operations.txt)
@@ -274,7 +276,6 @@ An opinionated list of awesome system prompts from various AI models.
 - [Prompt 2025 (03-10)](docs/assets/manus/prompt-2025_03_10.txt)
 - [Prompt](docs/assets/manus/prompt.txt)
 - [Prompting Guide](docs/assets/manus/prompting-guide.txt)
-- [Tools (JSON)](docs/assets/manus/tools.json)
 - [Tools](docs/assets/manus/tools.txt)
 
 ### [Mistral](https://mistral.ai)
@@ -350,7 +351,7 @@ An opinionated list of awesome system prompts from various AI models.
 - [OpenAI Deep Research](docs/assets/openai/openai-deep-research.txt)
 - [OpenAI Voice Mode (2025-07-06)](docs/assets/openai/openai-voice-mode-2025_07_06.txt)
 - [Persona Tone](docs/assets/openai/persona-tone.txt)
-- [Summary](docs/assets/openai/summary.json)
+- [Summary](docs/assets/openai/summary.txt)
 - [System](docs/assets/openai/system.txt)
 - [Tool Canvas](docs/assets/openai/tool-canvas.txt)
 - [Tool Channels](docs/assets/openai/tool-channels.txt)
@@ -402,8 +403,9 @@ An opinionated list of awesome system prompts from various AI models.
 
 ### [Replit](https://replit.com)
 
+- [Prompt 2025](docs/assets/replit/prompt-2025.txt)
 - [Prompt](docs/assets/replit/prompt.txt)
-- [Tools](docs/assets/replit/tools.json)
+- [Tools](docs/assets/replit/tools.txt)
 
 ### [Roblox Studio Assistant](https://create.roblox.com/docs/assistant/guide)
 
@@ -429,7 +431,7 @@ An opinionated list of awesome system prompts from various AI models.
 ### [Same-Dev](https://www.same.dev)
 
 - [Prompt](docs/assets/same-dev/prompt.txt)
-- [Tools](docs/assets/same-dev/tools.json)
+- [Tools](docs/assets/same-dev/tools.txt)
 
 ### [ScamGuard](https://www.thescamguard.com/)
 
@@ -480,7 +482,6 @@ An opinionated list of awesome system prompts from various AI models.
 - [Prompt 2025-02-01](docs/assets/windsurf/prompt-2025_02_01.txt)
 - [Prompt](docs/assets/windsurf/prompt.txt)
 - [System](docs/assets/windsurf/system.txt)
-- [Tools (JSON)](docs/assets/windsurf/tools.json)
 - [Tools](docs/assets/windsurf/tools.txt)
 
 ### [WRTN](https://wrtn.ai)
