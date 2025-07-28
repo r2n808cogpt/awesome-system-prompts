@@ -19,7 +19,7 @@ An opinionated list of awesome system prompts from various AI models.
 
 ### [Augment Code](https://www.augmentcode.com)
 
-- [Prompt](docs/assets//augment/prompt.txt)
+- [Prompt](docs/assets/augment/tools.json)
 
 ### [Blackbox.AI](https://www.blackbox.ai)
 
@@ -189,7 +189,6 @@ An opinionated list of awesome system prompts from various AI models.
 - [Gemini Diffusion](docs/assets/gemini/gemini-diffusion.txt)
 - [Google Gemini 1.5 (2024-04-11)](docs/assets/gemini/google-gemini-1_5-2024_04_11.txt)
 - [Google Gemini CLI (2024-07-03)](docs/assets/gemini/google-gemini-cli-2024-07-03.txt)
-- [Google Gemini CLI (2025-06-26)](docs/assets/gemini/google-gemini-cli-2025_06_26.txt)
 - [Google Stitch (2025-07-09)](docs/assets/gemini/google-stitch-2025_07_09.txt)
 - [Edit Tool](docs/assets/gemini/tool-edit.txt)
 - [Glob Tool](docs/assets/gemini/tool-glob.txt)
@@ -497,7 +496,7 @@ An opinionated list of awesome system prompts from various AI models.
 - [Message Action](docs/assets/xcode/message-action.txt)
 - [Playground Action](docs/assets/xcode/playground-action.txt)
 - [Preview Action](docs/assets/xcode/preview-action.txt)
-- [System Action](docs/assets/xcode/system.txt)
+- [System Action](docs/assets/xcode/system-action.txt)
 
 ### [Zed](https://zed.dev)
 
