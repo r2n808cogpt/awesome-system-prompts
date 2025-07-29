@@ -8,10 +8,10 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
-import Tools from "!raw-loader!./assets/augment/tools.txt";
+import Tools from "!!raw-loader!./assets/augment/tools.json";
 
 <Tabs queryString="primary">
   <TabItem value="tools" label="Tools">
-    <CodeBlock language="markdown">{Tools}</CodeBlock>
+    <CodeBlock language="json">{Tools}</CodeBlock>
   </TabItem>
 </Tabs>
