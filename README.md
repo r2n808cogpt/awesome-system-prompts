@@ -410,6 +410,11 @@ An opinionated list of awesome system prompts from various AI models.
 
 - [Phind 2024-04-27](docs/assets/phind/phind-2024_04_27.txt)
 
+### [Proton](https://proton.me/)
+
+- [Prompt (2025-07-24)](docs/assets/proton/prompt-2025-07-24.txt)
+- [Prompt (2025-07-27)](docs/assets/proton/prompt-2025-07-27.txt)
+
 ### [Raycast](https://www.raycast.com)
 
 - [Prompt](docs/assets/raycast/prompt.txt)
