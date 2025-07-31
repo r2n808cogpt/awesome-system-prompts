@@ -1,0 +1,25 @@
+---
+title: Kiro
+description: Kiro Prompt
+hide_table_of_contents: true
+---
+
+import CodeBlock from "@theme/CodeBlock";
+import TabItem from "@theme/TabItem";
+import Tabs from "@theme/Tabs";
+
+import ModeClassifier from "!raw-loader!./assets/kiro/mode-clasifier-prompt.txt";
+import SpecPrompt from "!raw-loader!./assets/kiro/spec-prompt.txt";
+import VibePrompt from "!raw-loader!./assets/kiro/vibe-prompt.txt";
+
+<Tabs queryString="primary">
+  <TabItem value="mode-classifier-prompt" label="Mode Classifier Prompt">
+    <CodeBlock language="markdown">{ModeClassifier}</CodeBlock>
+  </TabItem>
+  <TabItem value="spec-prompt" label="Specification Prompt">
+    <CodeBlock language="markdown">{SpecPrompt}</CodeBlock>
+  </TabItem>
+  <TabItem value="vibe-prompt" label="Vibe Prompt">
+    <CodeBlock language="markdown">{VibePrompt}</CodeBlock>
+  </TabItem>
+</Tabs>
