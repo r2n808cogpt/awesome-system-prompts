@@ -267,6 +267,12 @@ An opinionated list of awesome system prompts from various AI models.
 
 - [Prompt](docs/assets/kagi/prompt.txt)
 
+### [Kiro](https://kiro.dev)
+
+- [Mode Classifier](docs/assets/kiro/mode-clasifier-prompt.txt)
+- [Specification](docs/assets/kiro/spec-prompt.txt)
+- [Vibe](docs/assets/kiro/vibe-prompt.txt)
+
 ### [Lovable](https://lovable.ai)
 
 - [Agent Prompt](docs/assets/lovable/agent-prompt.txt)
@@ -520,6 +526,10 @@ An opinionated list of awesome system prompts from various AI models.
 - [Playground Action](docs/assets/xcode/playground-action.txt)
 - [Preview Action](docs/assets/xcode/preview-action.txt)
 - [System Action](docs/assets/xcode/system-action.txt)
+
+### [Z.ai](https://z.ai)
+
+- [Prompt](docs/assets/z-ai/prompt.txt)
 
 ### [Zed](https://zed.dev)
 
