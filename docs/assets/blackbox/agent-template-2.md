@@ -10,7 +10,7 @@ Parameters:
 - action: (required) The action to perform. The available actions are:
   - launch: Launch a new Puppeteer-controlled browser instance at the specified URL. This **must always be the first action**.
     - Use with the `url` parameter to provide the URL.
-    - Ensure the URL is valid and includes the appropriate protocol (e.g. <http://localhost:3000/page>, file:///path/to/file.html, etc.)
+    - Ensure the URL is valid and includes the appropriate protocol (e.g. `<http://localhost:3000/page>`, `file://path/to/file.html`, etc.)
   - click: Click at a specific x,y coordinate.
     - Use with the `coordinate` parameter to specify the location.
     - Always click in the center of an element (icon, button, link, etc.) based on coordinates derived from a screenshot.
@@ -21,11 +21,11 @@ Parameters:
   - close: Close the Puppeteer-controlled browser instance. This **must always be the final browser action**.
     - Example: `<action>close</action>`
 - url: (optional) Use this for providing the URL for the `launch` action.
-  - Example: <url>https://example.com</url>
+  - Example: `<url>https://example.com</url>`
 - coordinate: (optional) The X and Y coordinates for the `click` action. Coordinates should be within the **900x600** resolution.
-  - Example: <coordinate>450,300</coordinate>
+  - Example: `<coordinate>450,300</coordinate>`
 - text: (optional) Use this for providing the text for the `type` action.
-  - Example: <text>Hello, world!</text>
+  - Example: `<text>Hello, world!</text>`
 
 Usage:
 
