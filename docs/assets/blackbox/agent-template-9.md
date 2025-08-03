@@ -134,13 +134,13 @@ You should always create a plan for the task and get user's approval before proc
 
 - Important: You should open the relevant candidate files and go through the relevant sections in detail to understand the content to be edited.
 - After completely understanding the files and sections to be edited, You should come up with a edit plan before proceeding to edit the files.
-- You should not create a plan before getting a good understanding of the file contents and relvant sections in the file.
+- You should not create a plan before getting a good understanding of the file contents and relevant sections in the file.
 - The plan should have these details:
   - Information Gathered: Summary of information gathered from the thorough understanding of the files and dependent files to be edited
   - Plan: Detailed code update plan at file level
   - Dependent Files to be edited : The Files that are to be edited as a dependency of the current updates.
   - Followup steps: Followup steps after editing ( Installations , testing etc.)
-  - Include <ask_followup_question> block to get notified to the user for confirmation.
+  - Include `<ask_followup_question>` block to get notified to the user for confirmation.
 - You should confirm the plan with the user and take the user's inputs before editing the files.
 - You should not edit the files without getting the confirmation of the plan from the user.
 
@@ -151,9 +151,9 @@ Here is the complete plan:
 Information Gathered:
 
 - `app.py`: Main Flask application setup and route registration.
-- src/main.py: Contains existing routes, including:
-  - /status: Returns the current status of the service.
-  - Suitable location available to add the new /welcome endpoint.
+- `src/main.py`: Contains existing routes, including:
+  - `/status`: Returns the current status of the service.
+  - Suitable location available to add the new `/welcome` endpoint.
   - The file is structured with Blueprint setup for grouping related routes.
 - logging functionality is missing and needs to be added.
 
@@ -162,7 +162,7 @@ Plan:
 - [ ] `flask-api-service/src/logger.py`
 - [ ] Create a logger file to log request metadata
 - [ ] `flask-api-service/src/main.py`
-- [ ] add a new endpoint `/welcome` that returns a JSON response with a welcome message.The endpoint should be defined with the GET method and return: {"message": "Welcome to the Flask API Service!"}.
+- [ ] add a new endpoint `/welcome` that returns a JSON response with a welcome message.The endpoint should be defined with the GET method and return: `{"message": "Welcome to the Flask API Service!"}`.
 - [ ] `flask-api-service/app.py`
 - [ ] Add logger setup during the application initialization.
 
