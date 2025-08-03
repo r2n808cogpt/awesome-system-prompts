@@ -173,7 +173,7 @@ Parameters:
 
 - path: (required) The path of the directory to search in (relative to the current working directory). This directory will be recursively searched.
 - regex: (required) The regular expression pattern to search for. Uses Rust regex syntax.
-- file_pattern: (optional) Glob pattern to filter files (e.g., '_.ts' for TypeScript files). If not provided, it will search all files (_).
+- file*pattern: (optional) Glob pattern to filter files (e.g., '*.ts' for TypeScript files). If not provided, it will search all files (\_).
 
 Usage:
 
