@@ -47,20 +47,21 @@ An opinionated list of awesome system prompts from various AI models.
 
 ### [Bolt](https://bolt.new)
 
-- [Prompt](docs/assets/bolt/prompt.txt)
+- [Prompt 2024-10-09](docs/assets/bolt/prompt-2024_10_09.md)
+- [Prompt](docs/assets/bolt/prompt.md)
 
 ### [Brave Leo](https://brave.com/leo/)
 
-- [2024-06-01](docs/assets/brave/leo-2024_06_01.txt)
+- [2024-06-01](docs/assets/brave/leo-2024_06_01.md)
 
 ### [Canva](https://www.canva.com)
 
-- [2025-05-19](docs/assets/canva/canva-2025_05_19.txt)
+- [2025-05-19](docs/assets/canva/canva-2025_05_19.md)
 
 ### [Claude](https://claude.ai)
 
-- [API Tools 2025-01-19](docs/assets/claude/api-tools-2025_01_19.txt)
-- [Artifacts 2024-06-20](docs/assets/claude/artifacts-2024_06_20.txt)
+- [API Tools 2025-01-19](docs/assets/claude/api-tools-2025_01_19.md)
+- [Artifacts 2024-06-20](docs/assets/claude/artifacts-2024_06_20.md)
 - [Available Tools](docs/assets/claude/available-tools.txt)
 - [Bash Security](docs/assets/claude/bash-security.txt)
 - [Citations](docs/assets/claude/citations.txt)
