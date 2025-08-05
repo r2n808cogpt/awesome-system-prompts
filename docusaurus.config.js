@@ -32,6 +32,7 @@ const config = {
           sidebarPath: "./sidebars.js",
           editUrl:
             "https://github.com/EliFuzz/awesome-system-prompts/blob/main/",
+          exclude: ["assets/**"],
         },
         blog: false,
         theme: {
