@@ -8,6 +8,7 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
+import DeepResearch from "!raw-loader!./assets/perplexity/deep-research.md";
 import Perplexity_2022_12_08 from "!raw-loader!./assets/perplexity/perplexity-2022_12_08.txt";
 import Perplexity_2024_03_11 from "!raw-loader!./assets/perplexity/perplexity-2024_03_11.txt";
 import Perplexity_2024_05_13 from "!raw-loader!./assets/perplexity/perplexity-2024_05_13.txt";
@@ -17,6 +18,9 @@ import Prompt from "!raw-loader!./assets/perplexity/prompt.txt";
 import Perplexity_Voice_Assistant from "!raw-loader!./assets/perplexity/voice-assistant.txt";
 
 <Tabs queryString="primary">
+  <TabItem value="deep-research" label="Deep Research">
+    <CodeBlock language="markdown">{DeepResearch}</CodeBlock>
+  </TabItem>
   <TabItem value="2022-12-08" label="2022-12-08">
     <CodeBlock language="markdown">{Perplexity_2022_12_08}</CodeBlock>
   </TabItem>
