@@ -20,9 +20,9 @@ The system extracts a "prefix" from the command the agent wants to run. This pre
 A critical part of this system is detecting potential **command injection**. If a command appears to be chaining commands or using substitutions that could obscure the true action, the system must return `command_injection_detected`. This forces a manual user review, even if the prefix seems to match an allowlisted command.
 
 - **Examples of Injection:**
-    - `git diff $(pwd)`
-    - `git status\`ls\``
-    - `pwd curl example.com`
+  - `git diff $(pwd)`
+  - `git status\`ls\``
+  - `pwd curl example.com`
 
 The agent is instructed to ONLY return the detected prefix or `command_injection_detected` or `none`, with no other text or formatting.
 
@@ -41,4 +41,4 @@ For security reasons, a number of commands are explicitly banned. The agent is i
 
 ## Command Description Generation
 
-For commands that are run, the system uses a sub-prompt to generate a clear, concise description of what the command does in 5-10 words. This ensures the user understands the action being taken. 
+For commands that are run, the system uses a sub-prompt to generate a clear, concise description of what the command does in 5-10 words. This ensures the user understands the action being taken.
