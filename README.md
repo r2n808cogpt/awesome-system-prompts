@@ -62,9 +62,9 @@ An opinionated list of awesome system prompts from various AI models.
 
 - [API Tools 2025-01-19](docs/assets/claude/api-tools-2025_01_19.md)
 - [Artifacts 2024-06-20](docs/assets/claude/artifacts-2024_06_20.md)
-- [Available Tools](docs/assets/claude/available-tools.txt)
-- [Bash Security](docs/assets/claude/bash-security.txt)
-- [Citations](docs/assets/claude/citations.txt)
+- [Available Tools](docs/assets/claude/available-tools.md)
+- [Bash Security](docs/assets/claude/bash-security.md)
+- [Citations](docs/assets/claude/citations.md)
 - [Claude](docs/assets/claude/claude.txt)
 - [Copyright Safety](docs/assets/claude/copyright-safety.txt)
 - [Core Persona](docs/assets/claude/core-persona.txt)
