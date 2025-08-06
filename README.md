@@ -405,6 +405,7 @@ An opinionated list of awesome system prompts from various AI models.
 
 ### [Perplexity](https://www.perplexity.ai)
 
+- [Deep Research](docs/assets/perplexity/deep-research.md)
 - [Perplexity 2022-12-08](docs/assets/perplexity/perplexity-2022_12_08.txt)
 - [Perplexity 2024-03-11](docs/assets/perplexity/perplexity-2024_03_11.txt)
 - [Perplexity 2024-05-13](docs/assets/perplexity/perplexity-2024_05_13.txt)
