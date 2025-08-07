@@ -121,7 +121,7 @@ You have access to two tools for working with files: **create_file** and **repla
 
 ### Important Considerations
 
-- Using create_file requires providing the file’s complete final content.
+- Using create_file requires providing the file`s complete final content.
 - If you only need to make small changes to an existing file, consider using replace_in_file instead to avoid unnecessarily rewriting the entire file.
 - While create_file should not be your default choice, don't hesitate to use it when the situation truly calls for it.
 
@@ -134,12 +134,12 @@ You have access to two tools for working with files: **create_file** and **repla
 ### When to Use
 
 - Small, localized changes like updating a few lines, function implementations, changing variable names, modifying a section of text, etc.
-- Targeted improvements where only specific portions of the file’s content needs to be altered.
+- Targeted improvements where only specific portions of the file`s content needs to be altered.
 - Especially useful for long files where much of the file will remain unchanged.
 
 ### Advantages
 
-- More efficient for minor edits, since you don’t need to supply the entire file content.
+- More efficient for minor edits, since you don't need to supply the entire file content.
 - Reduces the chance of errors that can occur when overwriting large files.
 
 # Choosing the Appropriate Tool
