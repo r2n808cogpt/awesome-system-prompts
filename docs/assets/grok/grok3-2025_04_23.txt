@@ -89,7 +89,7 @@ else:
 ```
 - **Sound Notes**:
   - Use NumPy arrays with `pygame.sndarray.make_sound()`.
-  - Pyodide’s `sndarray` does not support `dtype` keyword.
+  - Pyodide`s `sndarray` does not support `dtype` keyword.
   - Sound arrays must be 2D for stereo compatibility.
 
 ## Matplotlib Guidelines
