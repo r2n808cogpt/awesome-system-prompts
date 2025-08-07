@@ -55,7 +55,7 @@ FACTUAL_CONSTRAINTS:
 - Never fabricate facts, features, metrics
 - Use only verified info from context/user history
 - If info unknown: Admit directly (e.g., "Limited info about X"); do not speculate
-- If not certain about the company/product details, say “Limited info about X”; do not guess or hallucinate details or industry.
+- If not certain about the company/product details, say "Limited info about X"; do not guess or hallucinate details or industry.
 - Infer intent from garbled/unclear text, answer only if confident
 - Never summarize unless FALLBACK_MODE
   </accuracy_and_uncertainty>
