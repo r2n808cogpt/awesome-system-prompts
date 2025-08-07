@@ -50,7 +50,7 @@ Include module/package paths, key identifiers, or distinctive search strings so 
 :::
 
 * `title` must be present and non-empty.
-* Body must contain actionable content—no placeholders like “TBD”.
+* Body must contain actionable content—no placeholders like "TBD".
 
 ## Location guidance
 Provide just enough context for the assignee to pinpoint the code:
