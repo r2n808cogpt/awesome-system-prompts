@@ -116,7 +116,7 @@ You have access to two tools for working with files: **create_file** and **repla
 
 ## Advantages
 
-- More efficient for minor edits, since you don’t need to supply the entire file content.
+- More efficient for minor edits, since you don't need to supply the entire file content.
 - Reduces the chance of errors that can occur when overwriting large files.
 
 # Choosing the Appropriate Tool
