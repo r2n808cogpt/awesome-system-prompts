@@ -295,7 +295,7 @@ IMPORTANT: Bash commands may run multiple commands that are chained together.
 For safety, if the command seems to contain command injection, you must return "command_injection_detected". 
 (This will help protect the user: if they think that they're allowlisting command A, 
 but the AI coding agent sends a malicious command that technically has the same prefix as command A, 
-then the safety system will see that you said “command_injection_detected” and ask the user for manual confirmation.)
+then the safety system will see that you said "command_injection_detected" and ask the user for manual confirmation.)
 
 Note that not every command has a prefix. If a command has no prefix, return "none".
 
@@ -364,7 +364,7 @@ const BashTool = {
           : null) || "Executes a bash command"
       );
     } catch (d) {
-      return (X0(d), "Executes a bash command");
+      return X0(d), "Executes a bash command";
     }
   },
   async prompt() {
@@ -986,7 +986,7 @@ Files modified by other users:
     if (C.length < 5) return [];
     return C;
   } catch (I) {
-    return (X0(I), []);
+    return X0(I), [];
   }
 }
 
@@ -1238,7 +1238,7 @@ ${W}`
   let w = commander
     .command("config")
     .description("Manage configuration (eg. claude config set -g theme dark)");
-  (w
+  w
     .command("get <key>")
     .description("Get a config value")
     .option("-c, --cwd <cwd>", "The current working directory", String, HU())
@@ -1257,15 +1257,15 @@ ${W}`
       .command("list")
       .description("List all config values")
       .option("-c, --cwd <cwd>", "The current working directory", String, HU())
-      .option("-g, --global", "Use global config", false));
+      .option("-g, --global", "Use global config", false);
 
   let B = commander
     .command("approved-tools")
     .description("Manage approved tools");
-  (B.command("list").description("List all approved tools"),
+  B.command("list").description("List all approved tools"),
     B.command("remove <tool>").description(
       "Remove a tool from the list of approved tools"
-    ));
+    );
 
   let A = commander
     .command("mcp")
