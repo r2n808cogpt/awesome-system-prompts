@@ -15,4 +15,4 @@ This file serves three primary purposes:
 The agent is encouraged to be proactive in keeping the `CLAUDE.md` file up to date.
 
 - **Finding Commands:** When the agent spends time searching for commands to perform common tasks (typechecking, linting, building, testing), it should ask the user for permission to add those commands to `CLAUDE.md`.
-- **Learning Preferences:** Similarly, when the agent learns about the user's code style preferences or important details about the codebase, it should ask for permission to add that information to `CLAUDE.md` to remember it for the future. 
+- **Learning Preferences:** Similarly, when the agent learns about the user's code style preferences or important details about the codebase, it should ask for permission to add that information to `CLAUDE.md` to remember it for the future.
