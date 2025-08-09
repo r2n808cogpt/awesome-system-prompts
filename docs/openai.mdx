@@ -11,6 +11,7 @@ import Tabs from "@theme/Tabs";
 import Summary from "!!raw-loader!./assets/openai/summary.txt";
 import AdvancedVoiceMode from "!raw-loader!./assets/openai/advanced-voice-mode.txt";
 import AutomationContext from "!raw-loader!./assets/openai/automation-context.txt";
+import ChatGpt5_2025_08_08 from "!raw-loader!./assets/openai/chat-gpt-5-2025-08-08.md";
 import Codex from "!raw-loader!./assets/openai/codex.txt";
 import Dalle from "!raw-loader!./assets/openai/dalle.txt";
 import EditAudio from "!raw-loader!./assets/openai/edit-audio.py";
@@ -68,6 +69,9 @@ import ToolWebSearch from "!raw-loader!./assets/openai/tool-web-search.txt";
 import WebBrowsingPolicy from "!raw-loader!./assets/openai/web-browsing-policy.txt";
 
 <Tabs queryString="primary">
+  <TabItem value="chat-gpt-5-2025-08-08" label="ChatGPT 5 (2025-08-08)">
+    <CodeBlock language="markdown">{ChatGpt5_2025_08_08}</CodeBlock>
+  </TabItem>
   <TabItem value="advanced-voice-mode" label="Advanced Voice Mode">
     <CodeBlock language="markdown">{AdvancedVoiceMode}</CodeBlock>
   </TabItem>
