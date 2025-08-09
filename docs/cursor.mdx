@@ -8,6 +8,7 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
+import AgentCLI_2025_08_07 from "!raw-loader!./assets/cursor/agent-cli-2025-08-07.md";
 import AgentTools from "!raw-loader!./assets/cursor/agent-tools-v1.txt";
 import AgentV1_0 from "!raw-loader!./assets/cursor/agent-v1_0.txt";
 import AgentV1_1 from "!raw-loader!./assets/cursor/agent-v1_1.txt";
@@ -25,6 +26,9 @@ import Sonnet_3_7_Agent_Prompt from "!raw-loader!./assets/cursor/sonnet-3_7-agen
 import ToolUsage from "!raw-loader!./assets/cursor/tool-usage.txt";
 
 <Tabs queryString="primary">
+  <TabItem value="agent-cli-2025-08-07" label="Agent CLI (2025-08-07)">
+    <CodeBlock language="json">{AgentCLI_2025_08_07}</CodeBlock>
+  </TabItem>
   <TabItem value="agent" label="Agent">
     <CodeBlock language="json">{AgentTools}</CodeBlock>
   </TabItem>
