@@ -167,6 +167,7 @@ An opinionated list of awesome system prompts from various AI models.
 
 ### [Cursor](https://www.cursor.com)
 
+- [Agent CLI (2025-08-07)](docs/assets/cursor/agent-cli-2025-08-07.md)
 - [Agent Tools v1](docs/assets/cursor/agent-tools-v1.txt)
 - [Agent v1.0](docs/assets/cursor/agent-v1_0.txt)
 - [Agent v1.1](docs/assets/cursor/agent-v1_1.txt)
