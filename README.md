@@ -335,6 +335,7 @@ An opinionated list of awesome system prompts from various AI models.
 
 - [Advanced Voice Mode](docs/assets/openai/advanced-voice-mode.txt)
 - [Automation Context](docs/assets/openai/automation-context.txt)
+- [ChatGPT 5 (2025-08-08)](docs/assets/openai/chat-gpt-5-2025-08-08.md)
 - [Codex](docs/assets/openai/codex.txt)
 - [DALL·E](docs/assets/openai/dalle.txt)
 - [Edit Audio](docs/assets/openai/edit-audio.py)
