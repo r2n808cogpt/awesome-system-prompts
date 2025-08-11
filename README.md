@@ -484,7 +484,7 @@ An opinionated list of awesome system prompts from various AI models.
 - [Instructions](docs/assets/v0/instructions.txt)
 - [Model](docs/assets/v0/model.txt)
 - [Prompt 2025-03-06](docs/assets/v0/prompt-2025_03_06.txt)
-- [Prompt](docs/assets/v0/prompt.txt)
+- [Prompt](docs/assets/v0/prompt.md)
 - [System](docs/assets/v0/system.txt)
 - [Tools](docs/assets/v0/tools.txt)
 
