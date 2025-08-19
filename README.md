@@ -4,7 +4,7 @@ An opinionated list of awesome system prompts from various AI models.
 
 ## LLMs
 
-### [Aider](https://www.aider.ai)
+### [Aider](https://www.aider.ai): AI-powered coding assistant that helps developers modify codebases efficiently through natural language prompts and context-aware code changes
 
 - [Architect Mode](docs/assets/aider/architect-mode.md): outlining how an AI acts as an expert architect engineer to provide clear, concise, and change-focused instructions to an "editor engineer" for modifying code within a git repository
 - [Ask Mode](docs/assets/aider/ask-mode.md): as an expert code analyst AI, detailing its read-only nature for code analysis and question answering, its emphasis on brief responses, and its capability to request additional files for analysis.
@@ -13,11 +13,11 @@ An opinionated list of awesome system prompts from various AI models.
 - [System Prompt](docs/assets/aider/system-prompt.md): AI software developer coding best practices, interaction rules, and the precise `SEARCH/REPLACE` block format for code modifications.
 - [Udiff Mode](docs/assets/aider/udiff-mode.md): "udiff-mode" system prompt for an AI assistant, which instructs the assistant to output code changes in a unified diff format similar to `diff -U0`.
 
-### [Alan](https://alan.estsoft.ai/)
+### [Alan](https://alan.estsoft.ai/): AI assistant developed by ESTsoft that provides advanced conversational and productivity features for users and businesses
 
 - [Prompt](docs/assets/alan/prompt.md): outlines the detailed rules and limitations for "Alan Assistant" (also known as "Gepeto"), covering its response characteristics, information gathering capabilities, output formatting, and content generation restrictions.
 
-### [Augment Code](https://www.augmentcode.com)
+### [Augment Code](https://www.augmentcode.com): AI-powered coding assistant platform that leverages advanced agentic models and tool integrations to help developers efficiently analyze, edit, and manage codebases
 
 - [Agent GPT-5](docs/assets/augment/agent-gpt-5.md): outlines the role, identity, output formatting, preliminary tasks, information-gathering tools, planning and task management, editing guidelines, package management, instruction following, testing, execution and validation, code display, communication, recovery from difficulties, cost balancing, final workflow, and success criteria for the Augment Agent, an agentic coding AI assistant based on GPT 5.
 - [Agent Sonnet 4](docs/assets/augment/agent-sonnet-4.md): outlines the role, identity, preliminary tasks, planning and task management guidelines, editing instructions, package management rules, and general instructions for Augment Agent, an AI assistant based on Claude Sonnet 4.
