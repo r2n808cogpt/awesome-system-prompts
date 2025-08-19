@@ -8,9 +8,25 @@ import CodeBlock from "@theme/CodeBlock";
 import TabItem from "@theme/TabItem";
 import Tabs from "@theme/Tabs";
 
+import ToolsGPT5 from "!!raw-loader!./assets/augment/tools-gpt-5.json";
+import ToolsSonnet4 from "!!raw-loader!./assets/augment/tools-sonnet-4.json";
 import Tools from "!!raw-loader!./assets/augment/tools.json";
+import AgentGPT5 from "!raw-loader!./assets/augment/agent-gpt-5.md";
+import AgentSonnet4 from "!raw-loader!./assets/augment/agent-sonnet-4.md";
 
 <Tabs queryString="primary">
+  <TabItem value="agent-gpt-5" label="Agent GPT-5">
+    <CodeBlock language="markdown">{AgentGPT5}</CodeBlock>
+  </TabItem>
+  <TabItem value="tools-gpt-5" label="Tools GPT-5">
+    <CodeBlock language="json">{ToolsGPT5}</CodeBlock>
+  </TabItem>
+  <TabItem value="agent-sonnet-4" label="Agent Sonnet 4">
+    <CodeBlock language="markdown">{AgentSonnet4}</CodeBlock>
+  </TabItem>
+  <TabItem value="tools-sonnet-4" label="Tools Sonnet 4">
+    <CodeBlock language="json">{ToolsSonnet4}</CodeBlock>
+  </TabItem>
   <TabItem value="tools" label="Tools">
     <CodeBlock language="json">{Tools}</CodeBlock>
   </TabItem>
