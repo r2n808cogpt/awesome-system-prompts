@@ -19,11 +19,11 @@ An opinionated list of awesome system prompts from various AI models.
 
 ### [Augment Code](https://www.augmentcode.com)
 
-- [Agent GPT-5](docs/assets/augment/agent-gpt-5.md)
-- [Agent Sonnet 4](docs/assets/augment/agent-sonnet-4.md)
-- [Tools GPT-5](docs/assets/augment/tools-gpt-5.json)
-- [Tools Sonnet 4](docs/assets/augment/tools-sonnet-4.json)
-- [Tools](docs/assets/augment/tools.json)
+- [Agent GPT-5](docs/assets/augment/agent-gpt-5.md): outlines the role, identity, output formatting, preliminary tasks, information-gathering tools, planning and task management, editing guidelines, package management, instruction following, testing, execution and validation, code display, communication, recovery from difficulties, cost balancing, final workflow, and success criteria for the Augment Agent, an agentic coding AI assistant based on GPT 5.
+- [Agent Sonnet 4](docs/assets/augment/agent-sonnet-4.md): outlines the role, identity, preliminary tasks, planning and task management guidelines, editing instructions, package management rules, and general instructions for Augment Agent, an AI assistant based on Claude Sonnet 4.
+- [Tools GPT-5](docs/assets/augment/tools-gpt-5.json): defines a collection of tools, including functions for file and directory viewing, searching, editing, process management, diagnostics, browser interaction, web search and fetch, task list management, and memory storage, each with specified parameters and descriptions.
+- [Tools Sonnet 4](docs/assets/augment/tools-sonnet-4.json): defines a collection of tools, including a file editor (`str-replace-editor`), a browser opener (`open-browser`), a diagnostics tool, terminal interaction tools, Git commit retrieval, web search, web fetch, codebase retrieval, file removal, file saving, and task management tools, each with specific parameters and descriptions for their usage.
+- [Tools](docs/assets/augment/tools.json): describes a set of tools and various prompt templates for an Augment AI coding assistant.
 
 ### [Blackbox.AI](https://www.blackbox.ai)
 
