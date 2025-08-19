@@ -6,16 +6,16 @@ An opinionated list of awesome system prompts from various AI models.
 
 ### [Aider](https://www.aider.ai)
 
-- [Architect Mode](docs/assets/aider/architect-mode.md)
-- [Ask Mode](docs/assets/aider/ask-mode.md)
-- [File Mode](docs/assets/aider/file-mode.md)
-- [Patch Mode](docs/assets/aider/patch-mode.md)
-- [System Prompt](docs/assets/aider/system-prompt.md)
-- [Udiff Mode](docs/assets/aider/udiff-mode.md)
+- [Architect Mode](docs/assets/aider/architect-mode.md): outlining how an AI acts as an expert architect engineer to provide clear, concise, and change-focused instructions to an "editor engineer" for modifying code within a git repository
+- [Ask Mode](docs/assets/aider/ask-mode.md): as an expert code analyst AI, detailing its read-only nature for code analysis and question answering, its emphasis on brief responses, and its capability to request additional files for analysis.
+- [File Mode](docs/assets/aider/file-mode.md): "file listing" format for an AI assistant, which involves returning the entire content of a file (either existing or new) within a specific fenced code block structure to propose code changes.
+- [Patch Mode](docs/assets/aider/patch-mode.md): "V4A Diff Format Rules" used by an expert software developer agent, detailing how it should propose code changes, create new files, and refactor existing ones using a unified patch format with context-aware diffs for Add, Update, and Delete operations.
+- [System Prompt](docs/assets/aider/system-prompt.md): AI software developer coding best practices, interaction rules, and the precise `SEARCH/REPLACE` block format for code modifications.
+- [Udiff Mode](docs/assets/aider/udiff-mode.md): "udiff-mode" system prompt for an AI assistant, which instructs the assistant to output code changes in a unified diff format similar to `diff -U0`.
 
 ### [Alan](https://alan.estsoft.ai/)
 
-- [Prompt](docs/assets/alan/prompt.md)
+- [Prompt](docs/assets/alan/prompt.md): outlines the detailed rules and limitations for "Alan Assistant" (also known as "Gepeto"), covering its response characteristics, information gathering capabilities, output formatting, and content generation restrictions.
 
 ### [Augment Code](https://www.augmentcode.com)
 
