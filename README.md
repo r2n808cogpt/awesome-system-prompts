@@ -19,7 +19,11 @@ An opinionated list of awesome system prompts from various AI models.
 
 ### [Augment Code](https://www.augmentcode.com)
 
-- [Prompt](docs/assets/augment/tools.json)
+- [Agent GPT-5](docs/assets/augment/agent-gpt-5.md)
+- [Agent Sonnet 4](docs/assets/augment/agent-sonnet-4.md)
+- [Tools GPT-5](docs/assets/augment/tools-gpt-5.json)
+- [Tools Sonnet 4](docs/assets/augment/tools-sonnet-4.json)
+- [Tools](docs/assets/augment/tools.json)
 
 ### [Blackbox.AI](https://www.blackbox.ai)
 
@@ -502,9 +506,9 @@ An opinionated list of awesome system prompts from various AI models.
 
 ### [Whatsapp](https://www.whatsapp.com)
 
-- [Llama 4](docs/assets/whatsapp/llama4.txt)
-- [Meta AI](docs/assets/whatsapp/meta-ai.txt)
-- [Whatsapp 2025-05-28](docs/assets/whatsapp/whatsapp_2025_05_28.txt)
+- [Llama 4](docs/assets/whatsapp/llama4.md)
+- [Meta AI](docs/assets/whatsapp/meta-ai.md)
+- [Whatsapp 2025-08-19](docs/assets/whatsapp/whatsapp-2025-08-19.md)
 
 ### [Windsurf](https://windsurf.ai)
 
